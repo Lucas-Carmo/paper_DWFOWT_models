@@ -1,0 +1,264 @@
+%% 
+%% Copyright 2019-2021 Elsevier Ltd
+%% 
+%% This file is part of the 'CAS Bundle'.
+%% --------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'CAS Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for cas-sc documentclass for 
+%% single column output.
+
+\documentclass[a4paper,fleqn]{cas-sc}
+
+% If the frontmatter runs over more than one page
+% use the longmktitle option.
+%\documentclass[a4paper,fleqn,longmktitle]{cas-sc}
+
+%\usepackage[numbers]{natbib}
+\usepackage[authoryear]{natbib}
+%\usepackage[authoryear,longnamesfirst]{natbib}
+
+
+
+%%=====
+%%=====  Packages included by us
+%%=====
+% Took this part from elsarticle example
+\usepackage[mathlines]{lineno} 
+\modulolinenumbers[1]
+
+\usepackage{lipsum}
+\usepackage{xcolor} 
+\usepackage{csquotes} % In order to use \enquote
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{relsize} % In order to use \mathsmaller
+\usepackage{upgreek} % Need extra font for greek letters
+\usepackage[section]{placeins} % Keep figures within same section
+\usepackage{tabularx} % Table with automatic line break within a cell
+\usepackage{caption}
+\usepackage{hyperref} 
+\usepackage{afterpage}
+
+% I wanted amsfonts for mathbb (i.e. with serif), not the one included in cas-sc
+\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+
+% Same thing for mathcal
+\DeclareSymbolFont{cmsymbols}{OMS}{cmsy}{m}{n}
+\SetSymbolFont{cmsymbols}{bold}{OMS}{cmsy}{b}{n}
+\DeclareSymbolFontAlphabet{\mathcal}{cmsymbols}
+
+% Hyperbolyc secant was missing
+\DeclareMathOperator{\sech}{sech}
+
+% Override \vec with an invocation of \vect.
+\newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
+
+\let\stdvec\vec
+\renewcommand{\vec}[1]{\vect{#1}}
+
+% ---- Change the real and imaginary symbols to something that looks nicer (in our opinion)
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+% In order to make smaller subscripts. For instance, $\varphi_O$ was too big
+\newcommand{\sbs}[1]{_{\!\mathsmaller{#1}}}
+
+% Useful for some tables
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+
+%%%% Solution found at
+%%%% https://tex.stackexchange.com/questions/436011/linenomath-printing-extra-numbers-on-last-line-of-multline-align-flalign-envir
+%%%% for the problem of numbering nested equations
+\usepackage{etoolbox} %% <- for \cspreto, \csappto, \patchcmd, \pretocmd, \apptocmd
+
+%% Patch 'normal' math environments:
+\newcommand*\linenomathpatch[1]{%
+  \cspreto{#1}{\linenomath}%
+  \cspreto{#1*}{\linenomath}%
+  \csappto{end#1}{\endlinenomath}%
+  \csappto{end#1*}{\endlinenomath}%
+}
+
+%% Patch AMS math environments:
+\newcommand*\linenomathpatchAMS[1]{%
+  \cspreto{#1}{\linenomathAMS}%
+  \cspreto{#1*}{\linenomathAMS}%
+  \csappto{end#1}{\endlinenomath}%
+  \csappto{end#1*}{\endlinenomath}%
+}
+
+%% Definition of \linenomathAMS depends on whether the mathlines option is provided
+\expandafter\ifx\linenomath\linenomathWithnumbers
+  \let\linenomathAMS\linenomathWithnumbers
+  %% The following line gets rid of an extra line numbers at the bottom:
+  \patchcmd\linenomathAMS{\advance\postdisplaypenalty\linenopenalty}{}{}{}
+\else
+  \let\linenomathAMS\linenomathNonumbers
+\fi
+
+\linenomathpatch{equation}
+\linenomathpatchAMS{gather}
+\linenomathpatchAMS{multline}
+\linenomathpatchAMS{align}
+\linenomathpatchAMS{alignat}
+\linenomathpatchAMS{flalign}
+
+
+% This essentially duplicates \substack, but adding an alignment point.
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+%%=====
+%====== END OF MY MODIFICATIONS
+%%=====
+
+
+
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+% Short title
+\shorttitle{Assessing the impact of model simplifications on the response of a floating wind turbine}
+
+% Short author
+\shortauthors{L. H. S. Carmo, A. N. Simos and P. C. de Mello}
+
+% Main title of the paper
+\title [mode = title]{Assessing the impact of model simplifications on the response of a floating wind turbine}
+
+% Title footnote mark
+% eg: \tnotemark[1]
+%\tnotemark[<tnote number>] 
+
+% Title footnote 1.
+% eg: \tnotetext[1]{Title footnote text}
+%\tnotetext[<tnote number>]{<tnote text>} 
+
+% First author
+%
+% Options: Use if required
+% eg: \author[1,3]{Author Name}[type=editor,
+%       style=chinese,
+%       auid=000,
+%       bioid=1,
+%       prefix=Sir,
+%       orcid=0000-0000-0000-0000,
+%       facebook=<facebook id>,
+%       twitter=<twitter id>,
+%       linkedin=<linkedin id>,
+%       gplus=<gplus id>]
+\author[1]{Lucas H. S. Carmo}[orcid=0000-0001-8744-1391]
+
+% Corresponding author indication
+\cormark[1]
+\cortext[1]{Corresponding author.}
+
+% Footnote of the first author
+%\fnmark[1]
+
+% Email id of the first author
+\ead{lucas.carmo@usp.br}
+
+% URL of the first author
+%\ead[url]{lucas.carmo@usp.br}
+
+% Credit authorship
+\credit{Conceptualization, Methodology, Software, Validation, Formal analysis, Writing -- original draft}
+
+% Address/affiliation
+\affiliation[1]{organization={University of São Paulo},
+            addressline={Av. Prof. Mello Moraes, 2231}, 
+            city={São Paulo},
+            %citysep={}, % Uncomment if no comma needed between city and postcode
+            postcode={05508-030}, 
+            %state={SP},
+            country={Brazil}}
+
+\author[1]{Alexandre N. Simos}[orcid=0000-0002-1879-5468]
+
+% Footnote of the second author
+%\fnmark[2]
+
+% Email id of the second author
+%\ead{alesimos@usp.br}
+
+% URL of the second author
+%\ead[url]{alesimos@usp.br}
+
+% Credit authorship
+\credit{Conceptualization, Formal analysis, Writing -- review, Supervision}
+
+% Credit authorship
+\author[1]{Pedro C. de Mello}[orcid=0000-0003-2621-9644]
+\credit{Experiments}
+
+
+% For a title note without a number/mark
+%\nonumnote{}
+
+% Here goes the abstract
+\input{sections/abstract}
+
+% Keywords
+% Each keyword is seperated by \sep
+\begin{keywords}
+    \sep Floating wind turbines \sep Model tests \sep Numerical modeling \sep Software-in-the-loop
+\end{keywords}
+  
+\maketitle
+
+% Main text
+\linenumbers
+\input{sections/introduction}
+\input{sections/experimental_setup}
+\input{sections/numerical_models}
+\input{sections/exp_vs_num}
+\input{sections/impact_simplifications}
+\input{sections/conclusions}
+
+% To print the credit authorship contribution details
+\printcredits
+
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Acknowledgments}
+This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Finance Code 001. Alexandre Simos thanks the Brazilian National Council for Scientific and Technological Development - CNPq - for his research grant (\# 306342/2020-0). 
+
+%% Loading bibliography style file
+%\bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+\bibliography{mybibfile}
+
+
+%\appendix
+%\input{sections/appendices}
+
+\end{document}
+
