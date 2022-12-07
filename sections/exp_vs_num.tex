@@ -1,23 +1,51 @@
 \section{Reproducing the experiments with numerical models} \label{sec:exp_vs_num}
+Explicar aqui como é organizada a seção e a metodologia usada p/ mostrar o resultado. O foco é em apresentar três aspectos físicos que tiveram maior atenção na modelagem do problema, e não tanto nos resultados da comparação entre o experimento e o ensaio.
+
 
 \subsection{The need for drag forces on the pontoons}
+Fazer figuras ilustrativas p/ mostrar o pontoon e a nomenclatura, junto com uma tabela com os diâmetros e coeficientes de arrasto adotados nas colunas/pontoons p/ cada um.
+
 Mostrar os decaimentos com três curvas: experimental, $C_D$ pro caso de um pontoon circular (o errado, tipo heave only p/ surge e surge only p/ heave) e $C_D$ pro pontoon retangular. Daí, mostrar que consegue pegar bem o heave e o surge simultaneamente quando tá retangular, o que não é possível no caso circular.
+
+
+Resultados a gerar:
+- Gráfico do Decaimento de heave com (lado a lado com o de surge):
+--- Experimental
+--- OpenFAST - Rect. pontoon
+--- OpenFAST - Circ. pontoon S 
+- Gráfico do Decaimento de surge com (lado a lado com o de heave):
+--- Experimental
+--- OpenFAST - Rect. pontoon
+--- OpenFAST - Circ. pontoon H 
+
+- Heave p/ APR01-IDLE-IRR-I1
+-- Série temporal e espectro na esquerda
+-- RAO na direita
+--- Experimental
+--- OpenFAST - Rect. pontoon
+--- OpenFAST - Circ. pontoon S 
+--- WAMIT no RAO
+
+- Mesma coisa p/ surge
+
 
 \subsection{The importance of second-order forces on both horizontal and vertical motions}
 Mostrar o offset e o pitch
 
-\subsection{The impact of mean hull inclination when computing radiation/diffraction coefficients}
-Comparar as forças calculadas no WAMIT (1a e 2a ordem) p/ o caso de maior inclinação e o de menor.
-
-Mostrar alguns RAOs selecionados.
-
-Mostrar um gráfico comparando as estatísticas calculadas c/ inclinação e sem.
-
-
-
-\subsection{Response under the action of irregular waves and wind}
+\subsection{Main results}
 Explicar o procedimento adotado para processar a grande quantidade de ondas, que é baseado nas estatísticas.
-
-Mostrar a tabela com as estatísticas.
+Mostrar tabela com períodos naturais e níveis de amortecimentos + tabela de resumo das estatísticas p/ ondas irregulares.
 
 Ilustrar c/ gráficos de séries temporais e espectros de casos selecionados (tem que ter a aerodinâmica p/ mostrar que o rotor tá funcionando) + gráfico do máximo e média
+
+
+\subsection{The impact of mean hull inclination when computing radiation/diffraction coefficients} \label{subsec:impact_inclination}
+As mentioned in Section~\ref{sec:numerical_models}, one of the objectives of this work is to assess the impact of considering the mean hull inclination caused by the wind when solving the radiation/diffraction problem. \textcolor{red}{Figure~X}, which summarizes in a boxplot the differences in the maxima obtained for each of the quantities analyzed in the previous sections for all the irregular waves, shows that this is not the case: in fact, the differences are .......... (falar também que a diferença é ainda mais irrelevante quando se pensa na tabela de extremos)
+
+**Mostrar um gráfico comparando as estatísticas calculadas c/ inclinação e sem.**
+
+In fact, this could be anticipated by looking directly at the radiation/diffraction coefficients that are imported by OpenFAST. These are illustrated by \textcolor{red}{Figure~X} (first-order diffraction forces), \textcolor{red}{Figure~X} (mean drift force) and \textcolor{red}{Figure~X} (added mass and potential damping). For conciseness, only the mesh with the largest inclination (\textcolor{red}{dizer qual é aqui, i.e. p/ qual vento, e qual é a inclinação}) and only one wave incidence (45\textdegree{}) is plotted, and the results for sway and roll are omitted because they are qualitatively the same as surge and pitch.
+
+**Mostrar gráficos das forças**
+
+It is worth pointing out that only the impact on the radiation/diffraction coefficients was assessed, and it is possible that hull inclination may be important to effects related to real flow phenomena, such as drag forces.
