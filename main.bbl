@@ -1,4 +1,4 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{5}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,5 +11,83 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Techreport
+\bibitem[{Cummins(1962)}]{cummins1962}
+\bibinfo{author}{Cummins, W.E.}, \bibinfo{year}{1962}.
+\newblock \bibinfo{title}{The impulse response function and ship motions}.
+\newblock \bibinfo{type}{Technical Report}. \bibinfo{address}{Technical Report
+  1661, David Taylor Model Basin}.
+%Type = Techreport
+\bibitem[{Jonkman and Musial(2010)}]{jonkman2010report}
+\bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Musial, W.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Offshore {C}ode {C}omparison {C}ollaboration {(OC3)}
+  for {IEA Wind Task 23} offshore wind technology and deployment}.
+\newblock \bibinfo{type}{Technical Report}. National Renewable Energy
+  Lab.(NREL), Golden, CO (United States). \bibinfo{address}{Golden, CO, USA}.
+%Type = Inproceedings
+\bibitem[{Ogilvie(1964)}]{ogilvie1964}
+\bibinfo{author}{Ogilvie, T.F.}, \bibinfo{year}{1964}.
+\newblock \bibinfo{title}{Recent progress toward the understanding and
+  prediction of ship motions}, in:
+  \bibinfo{booktitle}{5\textsuperscript{\MakeLowercase{th}} Symposium on Naval
+  Hydrodynamics}, \bibinfo{organization}{ONR}, \bibinfo{address}{Bergen,
+  Norway}.
+%Type = Inproceedings
+\bibitem[{Robertson et~al.(2014)Robertson, Jonkman, Vorpahl, Popko, Qvist,
+  Fr{\o}yd, Chen, Azona, Uzunoglu, Soares, Luan, Yutong, Pengcheng, Yde,
+  Larsen, Nichols, Buils, Lei, Nygaard, Manolas, Heege, Vatne, Ormberg, Duarte,
+  Godreau, Hansen, Nielsen, Riber, {Le Cunff}, Beyer, Yamaguchi, Jung, Shin,
+  Shi, Alves and Gu{\'e}rinel}]{OC42014}
+\bibinfo{author}{Robertson, A.}, \bibinfo{author}{Jonkman, J.},
+  \bibinfo{author}{Vorpahl, F.}, \bibinfo{author}{Popko, W.},
+  \bibinfo{author}{Qvist, J.}, \bibinfo{author}{Fr{\o}yd, L.},
+  \bibinfo{author}{Chen, X.}, \bibinfo{author}{Azona, J.},
+  \bibinfo{author}{Uzunoglu, E.}, \bibinfo{author}{Soares, C.G.},
+  \bibinfo{author}{Luan, C.}, \bibinfo{author}{Yutong, H.},
+  \bibinfo{author}{Pengcheng, F.}, \bibinfo{author}{Yde, A.},
+  \bibinfo{author}{Larsen, T.}, \bibinfo{author}{Nichols, J.},
+  \bibinfo{author}{Buils, R.}, \bibinfo{author}{Lei, L.},
+  \bibinfo{author}{Nygaard, T.}, \bibinfo{author}{Manolas, D.},
+  \bibinfo{author}{Heege, A.}, \bibinfo{author}{Vatne, S.},
+  \bibinfo{author}{Ormberg, H.}, \bibinfo{author}{Duarte, T.},
+  \bibinfo{author}{Godreau, C.}, \bibinfo{author}{Hansen, H.},
+  \bibinfo{author}{Nielsen, A.}, \bibinfo{author}{Riber, H.},
+  \bibinfo{author}{{Le Cunff}, C.}, \bibinfo{author}{Beyer, F.},
+  \bibinfo{author}{Yamaguchi, A.}, \bibinfo{author}{Jung, K.},
+  \bibinfo{author}{Shin, H.}, \bibinfo{author}{Shi, W.and~Park, H.},
+  \bibinfo{author}{Alves, M.}, \bibinfo{author}{Gu{\'e}rinel, M.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Offshore {C}ode {C}omparison {C}ollaboration
+  {C}ontinuation within {IEA} wind task 30: {P}hase {II} results regarding a
+  floating semisubmersible wind system}, in:
+  \bibinfo{booktitle}{33\textsuperscript{\MakeLowercase{rd}} International
+  Conference on Ocean, Offshore and Arctic Engineering},
+  \bibinfo{organization}{ASME}, \bibinfo{address}{San Francisco, CA, USA}.
+%Type = Article
+\bibitem[{Robertson et~al.(2017)Robertson, Wendt, Jonkman, Popko, Dagher,
+  Gueydon, Qvist, Vittori, Azcona, Uzunoglu, Soares, Harries, Yde, Galinos,
+  Hermans, {de Vaal}, Bozonnet, Bouy, Bayati, Bergua, Galvan, Mendikoa,
+  Sanchez, Shin, Oh, Molins and Debruyne}]{OC52017}
+\bibinfo{author}{Robertson, A.}, \bibinfo{author}{Wendt, F.},
+  \bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Popko, W.},
+  \bibinfo{author}{Dagher, H.}, \bibinfo{author}{Gueydon, S.},
+  \bibinfo{author}{Qvist, J.}, \bibinfo{author}{Vittori, F.},
+  \bibinfo{author}{Azcona, J.}, \bibinfo{author}{Uzunoglu, E.},
+  \bibinfo{author}{Soares, C.}, \bibinfo{author}{Harries, R.},
+  \bibinfo{author}{Yde, A.}, \bibinfo{author}{Galinos, C.},
+  \bibinfo{author}{Hermans, K.}, \bibinfo{author}{{de Vaal}, J.},
+  \bibinfo{author}{Bozonnet, P.}, \bibinfo{author}{Bouy, L.},
+  \bibinfo{author}{Bayati, I.}, \bibinfo{author}{Bergua, R.},
+  \bibinfo{author}{Galvan, J.}, \bibinfo{author}{Mendikoa, I.},
+  \bibinfo{author}{Sanchez, C.}, \bibinfo{author}{Shin, H.},
+  \bibinfo{author}{Oh, S.}, \bibinfo{author}{Molins, C.},
+  \bibinfo{author}{Debruyne, Y.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{{OC}5 project phase {II}: Validation of global loads
+  of the {D}eep{C}wind floating semisubmersible wind turbine}.
+\newblock \bibinfo{journal}{Energy Procedia} \bibinfo{volume}{137},
+  \bibinfo{pages}{38 -- 57}.
+\newblock \bibinfo{note}{14\textsuperscript{\MakeLowercase{th}} Deep Sea
+  Offshore Wind R\&D Conference, EERA DeepWind}.
 
 \end{thebibliography}
