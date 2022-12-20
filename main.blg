@@ -7,45 +7,45 @@ Reallocated singl_function (elt_size=8) to 100 items from 50.
 Warning--missing institution in cummins1962
 Warning--empty pages in ogilvie1964
 Warning--empty pages in OC42014
-You've used 5 entries,
+You've used 23 entries,
             2990 wiz_defined-function locations,
-            768 strings with 8321 characters,
-and the built_in function-call counts, 6228 in all, are:
-= -- 329
-> -- 546
-< -- 3
-+ -- 208
-- -- 201
-* -- 876
-:= -- 941
-add.period$ -- 14
-call.type$ -- 5
-change.case$ -- 93
-chr.to.int$ -- 5
-cite$ -- 8
-duplicate$ -- 357
-empty$ -- 284
-format.name$ -- 214
-if$ -- 1050
+            871 strings with 12802 characters,
+and the built_in function-call counts, 22425 in all, are:
+= -- 1549
+> -- 1390
+< -- 16
++ -- 539
+- -- 504
+* -- 2659
+:= -- 3174
+add.period$ -- 57
+call.type$ -- 23
+change.case$ -- 282
+chr.to.int$ -- 23
+cite$ -- 26
+duplicate$ -- 1556
+empty$ -- 1299
+format.name$ -- 571
+if$ -- 4201
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 103
-newline$ -- 39
-num.names$ -- 20
-pop$ -- 154
+missing$ -- 326
+newline$ -- 118
+num.names$ -- 92
+pop$ -- 562
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 259
 quote$ -- 0
-skip$ -- 68
+skip$ -- 569
 stack$ -- 0
-substring$ -- 80
-swap$ -- 391
-text.length$ -- 0
+substring$ -- 578
+swap$ -- 1401
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 45
+type$ -- 207
 warning$ -- 3
-while$ -- 16
+while$ -- 90
 width$ -- 0
-write$ -- 85
+write$ -- 337
 (There were 3 warnings)

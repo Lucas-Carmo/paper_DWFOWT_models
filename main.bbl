@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,12 +11,86 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Inproceedings
+\bibitem[{Azcona et~al.(2014)Azcona, Bouchotrouch, Gonz{\'a}lez,
+  Garciand{\'\i}a, Munduate, Kelberlau and Nygaard}]{azcona2014aerodynamic}
+\bibinfo{author}{Azcona, J.}, \bibinfo{author}{Bouchotrouch, F.},
+  \bibinfo{author}{Gonz{\'a}lez, M.}, \bibinfo{author}{Garciand{\'\i}a, J.},
+  \bibinfo{author}{Munduate, X.}, \bibinfo{author}{Kelberlau, F.},
+  \bibinfo{author}{Nygaard, T.A.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Aerodynamic thrust modelling in wave tank tests of
+  offshore floating wind turbines using a ducted fan}, in:
+  \bibinfo{booktitle}{Journal of Physics: Conference Series},
+  \bibinfo{organization}{IOP Publishing}. p. \bibinfo{pages}{012089}.
+%Type = Inproceedings
+\bibitem[{Bachynski et~al.(2016)Bachynski, Thys, Sauder, Chabaud and
+  S{\ae}ther}]{bachynski2016real}
+\bibinfo{author}{Bachynski, E.E.}, \bibinfo{author}{Thys, M.},
+  \bibinfo{author}{Sauder, T.}, \bibinfo{author}{Chabaud, V.},
+  \bibinfo{author}{S{\ae}ther, L.O.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Real-time hybrid model testing of a braceless
+  semi-submersible wind turbine: {Part II—Experimental} results}, in:
+  \bibinfo{booktitle}{International Conference on Offshore Mechanics and Arctic
+  Engineering}, \bibinfo{organization}{American Society of Mechanical
+  Engineers}. p. \bibinfo{pages}{V006T09A040}.
+%Type = Inproceedings
+\bibitem[{Bayati et~al.(2018)Bayati, Facchinetti, Fontanella, Giberti and
+  Belloli}]{bayati2018wind}
+\bibinfo{author}{Bayati, I.}, \bibinfo{author}{Facchinetti, A.},
+  \bibinfo{author}{Fontanella, A.}, \bibinfo{author}{Giberti, H.},
+  \bibinfo{author}{Belloli, M.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{A wind tunnel/{HIL} setup for integrated tests of
+  {F}loating {O}ffshore {W}ind {T}urbines}, in: \bibinfo{booktitle}{Journal of
+  Physics: Conference Series}, \bibinfo{organization}{IOP Publishing}. p.
+  \bibinfo{pages}{052025}.
+%Type = Article
+\bibitem[{Belloli et~al.(2020)Belloli, Bayati, Facchinetti, Fontanella,
+  Giberti, La~Mura, Taruffi and Zasso}]{belloli2020hybrid}
+\bibinfo{author}{Belloli, M.}, \bibinfo{author}{Bayati, I.},
+  \bibinfo{author}{Facchinetti, A.}, \bibinfo{author}{Fontanella, A.},
+  \bibinfo{author}{Giberti, H.}, \bibinfo{author}{La~Mura, F.},
+  \bibinfo{author}{Taruffi, F.}, \bibinfo{author}{Zasso, A.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{A hybrid methodology for wind tunnel testing of
+  floating offshore wind turbines}.
+\newblock \bibinfo{journal}{Ocean Engineering} \bibinfo{volume}{210},
+  \bibinfo{pages}{107592}.
+%Type = Article
+\bibitem[{Bredmose et~al.(2017)Bredmose, Lemmer, Borg, Pegalajar-Jurado,
+  Mikkelsen, Larsen, Fjelstrup, Yu, Lomholt, Boehm et~al.}]{bredmose2017triple}
+\bibinfo{author}{Bredmose, H.}, \bibinfo{author}{Lemmer, F.},
+  \bibinfo{author}{Borg, M.}, \bibinfo{author}{Pegalajar-Jurado, A.},
+  \bibinfo{author}{Mikkelsen, R.F.}, \bibinfo{author}{Larsen, T.S.},
+  \bibinfo{author}{Fjelstrup, T.}, \bibinfo{author}{Yu, W.},
+  \bibinfo{author}{Lomholt, A.K.}, \bibinfo{author}{Boehm, L.}, et~al.,
+  \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{The {Triple Spar} campaign: {M}odel tests of a 10mw
+  floating wind turbine with waves, wind and pitch control}.
+\newblock \bibinfo{journal}{Energy Procedia} \bibinfo{volume}{137},
+  \bibinfo{pages}{58--76}.
 %Type = Techreport
 \bibitem[{Cummins(1962)}]{cummins1962}
 \bibinfo{author}{Cummins, W.E.}, \bibinfo{year}{1962}.
 \newblock \bibinfo{title}{The impulse response function and ship motions}.
 \newblock \bibinfo{type}{Technical Report}. \bibinfo{address}{Technical Report
   1661, David Taylor Model Basin}.
+%Type = Article
+\bibitem[{Goupee et~al.(2014)Goupee, Koo, Kimball, Lambrakos and
+  Dagher}]{goupee2014experimental}
+\bibinfo{author}{Goupee, A.J.}, \bibinfo{author}{Koo, B.J.},
+  \bibinfo{author}{Kimball, R.W.}, \bibinfo{author}{Lambrakos, K.F.},
+  \bibinfo{author}{Dagher, H.J.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Experimental comparison of three floating wind
+  turbine concepts}.
+\newblock \bibinfo{journal}{Journal of Offshore Mechanics and Arctic
+  Engineering} \bibinfo{volume}{136}.
+%Type = Techreport
+\bibitem[{Jonkman and Buhl(2005)}]{jonkman2005fast}
+\bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Buhl, M.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{{FAST User's Guide}}.
+\newblock \bibinfo{type}{Technical Report}. National Renewable Energy
+  Laboratory (NREL). \bibinfo{address}{Golden, CO, USA}.
 %Type = Techreport
 \bibitem[{Jonkman and Musial(2010)}]{jonkman2010report}
 \bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Musial, W.},
@@ -25,6 +99,37 @@
   for {IEA Wind Task 23} offshore wind technology and deployment}.
 \newblock \bibinfo{type}{Technical Report}. National Renewable Energy
   Lab.(NREL), Golden, CO (United States). \bibinfo{address}{Golden, CO, USA}.
+%Type = Article
+\bibitem[{Martin et~al.(2014)Martin, Kimball, Viselli and
+  Goupee}]{martin2014methodology}
+\bibinfo{author}{Martin, H.R.}, \bibinfo{author}{Kimball, R.W.},
+  \bibinfo{author}{Viselli, A.M.}, \bibinfo{author}{Goupee, A.J.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Methodology for wind/wave basin testing of floating
+  offshore wind turbines}.
+\newblock \bibinfo{journal}{Journal of Offshore Mechanics and Arctic
+  Engineering} \bibinfo{volume}{136}.
+%Type = Inproceedings
+\bibitem[{Mas-Soler et~al.(2022)Mas-Soler, do~Amaral, da~Silva, Malta, Carmo,
+  Ruggeri and Simos}]{mas2022parametric}
+\bibinfo{author}{Mas-Soler, J.}, \bibinfo{author}{do~Amaral, G.A.},
+  \bibinfo{author}{da~Silva, L.Z.}, \bibinfo{author}{Malta, E.B.},
+  \bibinfo{author}{Carmo, L.H.S.}, \bibinfo{author}{Ruggeri, F.},
+  \bibinfo{author}{Simos, A.N.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A parametric optimization approach for the initial
+  design of {FOWT}'s substructure and moorings in brazilian deep-water fields},
+  in: \bibinfo{booktitle}{Journal of Physics: Conference Series},
+  \bibinfo{organization}{IOP Publishing}. p. \bibinfo{pages}{012025}.
+%Type = Inproceedings
+\bibitem[{Mortensen et~al.(2018)Mortensen, Laugesen, Jensen, Jessen and
+  Soltani}]{mortensen2018experimental}
+\bibinfo{author}{Mortensen, S.M.}, \bibinfo{author}{Laugesen, K.},
+  \bibinfo{author}{Jensen, J.K.}, \bibinfo{author}{Jessen, K.},
+  \bibinfo{author}{Soltani, M.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Experimental verification of the hydro-elastic model
+  of a scaled floating offshore wind turbine}, in: \bibinfo{booktitle}{2018
+  IEEE Conference on Control Technology and Applications (CCTA)},
+  \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1623--1630}.
 %Type = Inproceedings
 \bibitem[{Ogilvie(1964)}]{ogilvie1964}
 \bibinfo{author}{Ogilvie, T.F.}, \bibinfo{year}{1964}.
@@ -33,6 +138,48 @@
   \bibinfo{booktitle}{5\textsuperscript{\MakeLowercase{th}} Symposium on Naval
   Hydrodynamics}, \bibinfo{organization}{ONR}, \bibinfo{address}{Bergen,
   Norway}.
+%Type = Inproceedings
+\bibitem[{Otter et~al.(2020)Otter, Murphy and Desmond}]{otter2020emulating}
+\bibinfo{author}{Otter, A.}, \bibinfo{author}{Murphy, J.},
+  \bibinfo{author}{Desmond, C.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Emulating aerodynamic forces and moments for hybrid
+  testing of floating wind turbine models}, in: \bibinfo{booktitle}{Journal of
+  Physics: Conference Series}, \bibinfo{organization}{IOP Publishing}. p.
+  \bibinfo{pages}{032022}.
+%Type = Article
+\bibitem[{Otter et~al.(2022)Otter, Murphy, Pakrashi, Robertson and
+  Desmond}]{otter2022review}
+\bibinfo{author}{Otter, A.}, \bibinfo{author}{Murphy, J.},
+  \bibinfo{author}{Pakrashi, V.}, \bibinfo{author}{Robertson, A.},
+  \bibinfo{author}{Desmond, C.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A review of modelling techniques for floating
+  offshore wind turbines}.
+\newblock \bibinfo{journal}{Wind Energy} \bibinfo{volume}{25},
+  \bibinfo{pages}{831--857}.
+%Type = Inproceedings
+\bibitem[{Pires et~al.(2020)Pires, Azcona, Vittori, Bayati, Gueydon,
+  Fontanella, Liu, De~Ridder, Belloli and Van~Wingerden}]{pires2020inclusion}
+\bibinfo{author}{Pires, O.}, \bibinfo{author}{Azcona, J.},
+  \bibinfo{author}{Vittori, F.}, \bibinfo{author}{Bayati, I.},
+  \bibinfo{author}{Gueydon, S.}, \bibinfo{author}{Fontanella, A.},
+  \bibinfo{author}{Liu, Y.}, \bibinfo{author}{De~Ridder, E.},
+  \bibinfo{author}{Belloli, M.}, \bibinfo{author}{Van~Wingerden, J.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Inclusion of rotor moments in scaled wave tank test
+  of a floating wind turbine using {SIL} hybrid method}, in:
+  \bibinfo{booktitle}{Journal of Physics: Conference Series},
+  \bibinfo{organization}{IOP Publishing}. p. \bibinfo{pages}{032048}.
+%Type = Inproceedings
+\bibitem[{de~Ridder et~al.(2014)de~Ridder, Otto, Zondervan, Huijs and
+  Vaz}]{de2014development}
+\bibinfo{author}{de~Ridder, E.J.}, \bibinfo{author}{Otto, W.},
+  \bibinfo{author}{Zondervan, G.J.}, \bibinfo{author}{Huijs, F.},
+  \bibinfo{author}{Vaz, G.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Development of a scaled-down floating wind turbine
+  for offshore basin testing}, in: \bibinfo{booktitle}{International Conference
+  on Offshore Mechanics and Arctic Engineering},
+  \bibinfo{organization}{American Society of Mechanical Engineers}. p.
+  \bibinfo{pages}{V09AT09A027}.
 %Type = Inproceedings
 \bibitem[{Robertson et~al.(2014)Robertson, Jonkman, Vorpahl, Popko, Qvist,
   Fr{\o}yd, Chen, Azona, Uzunoglu, Soares, Luan, Yutong, Pengcheng, Yde,
@@ -59,7 +206,7 @@
   \bibinfo{author}{Alves, M.}, \bibinfo{author}{Gu{\'e}rinel, M.},
   \bibinfo{year}{2014}.
 \newblock \bibinfo{title}{Offshore {C}ode {C}omparison {C}ollaboration
-  {C}ontinuation within {IEA} wind task 30: {P}hase {II} results regarding a
+  {C}ontinuation within {IEA Wind Task 30}: {P}hase {II} results regarding a
   floating semisubmersible wind system}, in:
   \bibinfo{booktitle}{33\textsuperscript{\MakeLowercase{rd}} International
   Conference on Ocean, Offshore and Arctic Engineering},
@@ -89,5 +236,45 @@
   \bibinfo{pages}{38 -- 57}.
 \newblock \bibinfo{note}{14\textsuperscript{\MakeLowercase{th}} Deep Sea
   Offshore Wind R\&D Conference, EERA DeepWind}.
+%Type = Inproceedings
+\bibitem[{Sauder et~al.(2016)Sauder, Chabaud, Thys, Bachynski and
+  S{\ae}ther}]{sauder2016real}
+\bibinfo{author}{Sauder, T.}, \bibinfo{author}{Chabaud, V.},
+  \bibinfo{author}{Thys, M.}, \bibinfo{author}{Bachynski, E.E.},
+  \bibinfo{author}{S{\ae}ther, L.O.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Real-time hybrid model testing of a braceless
+  semi-submersible wind turbine: {Part I—The hybrid} approach}, in:
+  \bibinfo{booktitle}{International Conference on Offshore Mechanics and Arctic
+  Engineering}, \bibinfo{organization}{American Society of Mechanical
+  Engineers}. p. \bibinfo{pages}{V006T09A039}.
+%Type = Inproceedings
+\bibitem[{Skaare et~al.(2007)Skaare, Hanson, Nielsen, Yttervik, Hansen, Thomsen
+  and Larsen}]{skaare2007integrated}
+\bibinfo{author}{Skaare, B.}, \bibinfo{author}{Hanson, T.D.},
+  \bibinfo{author}{Nielsen, F.G.}, \bibinfo{author}{Yttervik, R.},
+  \bibinfo{author}{Hansen, A.M.}, \bibinfo{author}{Thomsen, K.},
+  \bibinfo{author}{Larsen, T.J.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Integrated dynamic analysis of floating offshore wind
+  turbines}, in: \bibinfo{booktitle}{European wind energy conference and
+  exhibition}, \bibinfo{organization}{Hamburg, Germany}. pp.
+  \bibinfo{pages}{1929--1939}.
+%Type = Inproceedings
+\bibitem[{Thys et~al.(2018)Thys, Chabaud, Sauder, Eliassen, S{\ae}ther and
+  Magnussen}]{thys2018real}
+\bibinfo{author}{Thys, M.}, \bibinfo{author}{Chabaud, V.},
+  \bibinfo{author}{Sauder, T.}, \bibinfo{author}{Eliassen, L.},
+  \bibinfo{author}{S{\ae}ther, L.O.}, \bibinfo{author}{Magnussen, {\O}.B.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Real-time hybrid model testing of a semi-submersible
+  {10MW} floating wind turbine and advances in the test method}, in:
+  \bibinfo{booktitle}{International Conference on Offshore Mechanics and Arctic
+  Engineering}, \bibinfo{organization}{American Society of Mechanical
+  Engineers}. p. \bibinfo{pages}{V001T01A013}.
+%Type = Manual
+\bibitem[{WAMIT(2004)}]{wamitManual}
+\bibinfo{author}{WAMIT, I.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{{WAMIT} {U}ser {M}anual - {V}ersions 6.2, 6.2{PC},
+  6.2{S}, 6.1{S}-{PC}}.
+\newblock \bibinfo{address}{Chestnut Hill, MA, USA}.
 
 \end{thebibliography}
