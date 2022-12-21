@@ -1,45 +1,81 @@
 \section{Reproducing the experiments with numerical models} \label{sec:exp_vs_num}
-Explicar aqui como é organizada a seção e a metodologia usada p/ mostrar o resultado. O foco é em apresentar três aspectos físicos que tiveram maior atenção na modelagem do problema, e não tanto nos resultados da comparação entre o experimento e o ensaio.
+As outlined in Section~\ref{sec:introduction}, the purpose of this section is to assess the relevance of three specific points concerning the hydrodynamic modeling of the floater in the numerical simulations: the drag forces on the pontoons (Section~\ref{subsec:exp_vs_num:drag}); the need for second-order wave forces not only for the horizontal motions, but also for the vertical dofs (Section~\ref{subsec:exp_vs_num:2nd_order}); and whether the mean hull inclination induced by the wind needs to be considered in the solution of the radiation/diffraction problem (Section~\ref{subsec:exp_vs_num:impact_inclination}). After these aspects have been discussed, Section~\ref{subsec:exp_vs_num:main_results} summarizes the main results to show the adherence between the numerical simulations and the experiment.
 
 
-\subsection{The need for drag forces on the pontoons}
-Fazer figuras ilustrativas p/ mostrar o pontoon e a nomenclatura, junto com uma tabela com os diâmetros e coeficientes de arrasto adotados nas colunas/pontoons p/ cada um.
+\subsection{The need for drag forces on the pontoons} \label{subsec:exp_vs_num:drag}
+The first point concerns the drag forces on the pontoons of the hull, which are relevant not only due to the damping that they introduce, but also because drag is and important forcing term for this type of floater. These forces are modeled in OpenFAST using Morison elements, but since the current version of the software includes only circular elements, the source code was modified to account for elements with rectangular cross section. In this modified version, the drag forces per unit length are given by:
+\begin{equation}
+\begin{split}
+	f_{Dx} &= \frac{1}{2} \rho \mkern2mu C_{Dx} \mkern2mu D_x \,||\vec{u}|| \, u_x \\[6pt]
+	f_{Dy} &= \frac{1}{2} \rho \mkern2mu C_{Dy} \mkern2mu D_y \,||\vec{u}|| \, u_y
+\end{split}		
+\end{equation}
+%
+where $\vec{u}=u_x\vec{e}_1+u_y\vec{e}_2$ is the relative fluid velocity (i.e. the difference between fluid velocity and local body velocity); $\vec{e}_1$ and $\vec{e}_2$ are the unit vectors directed along the local $x$ and $y$ axes, which are normal to the lateral faces of the rectangular cylinder; $C_{Dx}$ and $C_{Dy}$ are the drag coefficients in each direction; and $D_x$ and $D_y$ are the sides of the rectangle.
 
-Mostrar os decaimentos com três curvas: experimental, $C_D$ pro caso de um pontoon circular (o errado, tipo heave only p/ surge e surge only p/ heave) e $C_D$ pro pontoon retangular. Daí, mostrar que consegue pegar bem o heave e o surge simultaneamente quando tá retangular, o que não é possível no caso circular.
+The drag coefficients in each direction are obtained by comparing numerical decays in surge and heave with their experimental counterparts, as illustrated in Figures~\ref{fig:exp_vs_num:drag:surge_decay}~and~\ref{fig:exp_vs_num:drag:heave_decay}. These decays were performed with the complete setup of the experiment, hence with both the mooring lines and the umbilical cables needed by the SIL method, but without either wind or waves. In the right side of each graph is presented a PQ-analysis~\citep{burmester2020}, in which the slope of the curve corresponds to the quadratic damping, while the intersection with the $y$ axis is proportional to the linear damping. It turns out that the latter, which is mostly due to wave radiation, is negligible, being relevant only when the amplitude of motion is very small (note that the experiment provides a negative value for the linear heave damping, which is clearly not physical and a consequence of the small values involved). On the other hand, the quadratic damping, which is obtained considering the drag coefficients summarized in Table~\ref{tab:exp_vs_num:drag:drag_coeffs}, is within the range of values measured in the experiments (3 repetitions in surge and 7 in heave), as shown in Table~\ref{tab:exp_vs_num:drag:quad_damp_decay} (a complete set of decay results is given in Table~\textcolor{red}{5}). Note that it would be impossible to match the damping levels in both dofs simultaneously if the pontoons were modeled using circular Morison elements, since both $D$ and $C_D$ are different for each direction. 
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figures/surge_decay_drag_pontoon.png}	
+	\caption{Comparison of numerical and experimental surge decay.} \label{fig:exp_vs_num:drag:surge_decay}
+\end{figure}
+
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figures/heave_decay_drag_pontoon.png}	
+	\caption{Comparison of numerical and experimental heave decay.} \label{fig:exp_vs_num:drag:heave_decay}
+\end{figure}
+
+\begin{table}[!hbtp]
+	\caption{Resulting drag coefficient for each Morison element and its main dimensions.}\label{tab:exp_vs_num:drag:drag_coeffs}
+	\begin{tabular}{lrrr}
+		\toprule
+		& Length & Diameter & $C_D$ \\
+		\midrule
+		Central column & 18.6 & 14.1 & 0.61 \\
+		Offset columns & 18.6 & 17.0 & 0.61 \\
+		Pontoons - Vertical & 23.0 & 17.0 & 12.00 \\
+		Pontoons - Horizontal & 23.0 & 6.0 & 2.50 \\
+		\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!hbtp]
+	\caption{Comparison between the experimental and numerical values of the nondimensional quadratic drag coefficient ($B_Q/M$) obtained in the surge/heave decays.}\label{tab:exp_vs_num:drag:quad_damp_decay}
+	\begin{tabular}{crr}
+		\toprule
+		& Experiment & OpenFAST \\
+		\midrule
+		Surge & $0.021\pm0.002$ & 0.019 \\
+		Heave & $0.145\pm0.022$ & 0.127 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+Though the drag coefficients obtained from decay tests are not necessarily the same required by simulations considering waves, the values provided in Table~\ref{tab:exp_vs_num:drag:drag_coeffs} have led to good results for all of the wave and wind conditions analyzed in this work, as shown in Section~\ref{subsec:exp_vs_num:main_results}. For now, it is useful to see how the drag forces influence the motions. For that, Figures~ present the surge and heave motions of the FOWT under the action of the IRR-I1 wave ($T_P=14.5\,\text{m}$ and $H_S=9.3\,\text{m}$) and an incidence of 60\textdegree{}, without wind effects. To evidence the importance of the drag forces, the plots include results of simulations performed with circular Morison elements calibrated for the opposite dof, i.e. the results labeled \enquote{OpenFAST - Circ. pontoon S} presented in the heave graphs correspond to a circular pontoon with $D=6.0\,\text{m}$ and $C_D=2.50$, which are the values obtained from the surge decays; conversely, \enquote{OpenFAST - Circ. pontoon H} correspond to a circular pontoon calibrated using the heave decays. 
+
+SE CALIBRASSE PRO SURGE, SERIA UM CD MUITO PEQUENO P/ O HEAVE; MAS SE CALIBRASSE PRO HEAVE, SERIA UM AMORTECIMENTO MUITO GRANDE P/ SURGE.
+
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=\textwidth]{./figures/ptfmsurge-drag_pontoon.png}	
+	\caption{Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree{}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text{Hz}$).} \label{fig:exp_vs_num:drag:ptfmsurge}
+\end{figure}
+
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=\textwidth]{./figures/ptfmheave-drag_pontoon.png}	
+	\caption{Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree{}, without wind effects).} \label{fig:exp_vs_num:drag:ptfmheave}
+\end{figure}
 
 
-Resultados a gerar:
-- Gráfico do Decaimento de heave com (lado a lado com o de surge):
---- Experimental
---- OpenFAST - Rect. pontoon
---- OpenFAST - Circ. pontoon S 
-- Gráfico do Decaimento de surge com (lado a lado com o de heave):
---- Experimental
---- OpenFAST - Rect. pontoon
---- OpenFAST - Circ. pontoon H 
-
-- Heave p/ APR01-IDLE-IRR-I1
--- Série temporal e espectro na esquerda
--- RAO na direita
---- Experimental
---- OpenFAST - Rect. pontoon
---- OpenFAST - Circ. pontoon S 
---- WAMIT no RAO
-
-- Mesma coisa p/ surge
+\textcolor{red}{Acho que os RAOs de heave no lugar do zoom da PSD pode ser interessante! Colocar umas anotacoes p/ indicar a frequencia natural e o cancelamento nos dois graficos}
 
 
-\subsection{The importance of second-order forces on both horizontal and vertical motions}
+\subsection{The importance of second-order forces on both horizontal and vertical motions} \label{subsec:exp_vs_num:2nd_order}
 Mostrar o offset e o pitch
 
-\subsection{Main results}
-Explicar o procedimento adotado para processar a grande quantidade de ondas, que é baseado nas estatísticas.
-Mostrar tabela com períodos naturais e níveis de amortecimentos + tabela de resumo das estatísticas p/ ondas irregulares.
-
-Ilustrar c/ gráficos de séries temporais e espectros de casos selecionados (tem que ter a aerodinâmica p/ mostrar que o rotor tá funcionando) + gráfico do máximo e média
-
-
-\subsection{The impact of mean hull inclination when computing radiation/diffraction coefficients} \label{subsec:impact_inclination}
+\subsection{The impact of mean hull inclination when computing  radiation/diffraction coefficients} \label{subsec:exp_vs_num:impact_inclination}
 As mentioned in Section~\ref{sec:numerical_models}, one of the objectives of this work is to assess the impact of considering the mean hull inclination caused by the wind when solving the radiation/diffraction problem. \textcolor{red}{Figure~X}, which summarizes in a boxplot the differences in the maxima obtained for each of the quantities analyzed in the previous sections for all the irregular waves, shows that this is not the case: in fact, the differences are .......... (falar também que a diferença é ainda mais irrelevante quando se pensa na tabela de extremos)
 
 **Mostrar um gráfico comparando as estatísticas calculadas c/ inclinação e sem.**
@@ -53,3 +89,12 @@ In fact, this could be anticipated by looking directly at the radiation/diffract
 **Mostrar gráficos das forças**
 
 It is worth pointing out that only the impact on the radiation/diffraction coefficients was assessed, and it is possible that hull inclination may be important to effects related to real flow phenomena, such as drag forces.
+
+
+\subsection{Main results} \label{subsec:exp_vs_num:main_results}
+Explicar o procedimento adotado para processar a grande quantidade de ondas, que é baseado nas estatísticas.
+Mostrar tabela com períodos naturais e níveis de amortecimentos + tabela de resumo das estatísticas p/ ondas irregulares.
+
+Ilustrar c/ gráficos de séries temporais e espectros de casos selecionados (tem que ter a aerodinâmica p/ mostrar que o rotor tá funcionando) + gráfico do máximo e média
+
+

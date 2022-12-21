@@ -1,51 +1,51 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: cas-model2-names.bst
 Database file #1: mybibfile.bib
-Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--missing institution in cummins1962
 Warning--empty pages in ogilvie1964
 Warning--empty pages in OC42014
-You've used 23 entries,
+You've used 24 entries,
             2990 wiz_defined-function locations,
-            871 strings with 12802 characters,
-and the built_in function-call counts, 22425 in all, are:
-= -- 1549
-> -- 1390
+            877 strings with 12989 characters,
+and the built_in function-call counts, 23144 in all, are:
+= -- 1602
+> -- 1424
 < -- 16
-+ -- 539
-- -- 504
-* -- 2659
-:= -- 3174
-add.period$ -- 57
-call.type$ -- 23
-change.case$ -- 282
-chr.to.int$ -- 23
-cite$ -- 26
-duplicate$ -- 1556
-empty$ -- 1299
-format.name$ -- 571
-if$ -- 4201
++ -- 552
+- -- 516
+* -- 2743
+:= -- 3279
+add.period$ -- 60
+call.type$ -- 24
+change.case$ -- 291
+chr.to.int$ -- 24
+cite$ -- 27
+duplicate$ -- 1609
+empty$ -- 1348
+format.name$ -- 586
+if$ -- 4331
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 326
-newline$ -- 118
-num.names$ -- 92
-pop$ -- 562
+missing$ -- 337
+newline$ -- 123
+num.names$ -- 96
+pop$ -- 581
 preamble$ -- 1
-purify$ -- 259
+purify$ -- 267
 quote$ -- 0
-skip$ -- 569
+skip$ -- 582
 stack$ -- 0
-substring$ -- 578
-swap$ -- 1401
+substring$ -- 605
+swap$ -- 1442
 text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 207
+type$ -- 216
 warning$ -- 3
-while$ -- 90
+while$ -- 95
 width$ -- 0
-write$ -- 337
+write$ -- 351
 (There were 3 warnings)
