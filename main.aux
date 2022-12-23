@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -57,22 +60,30 @@
 \citation{burmester2020}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The need for drag forces on the pontoons}{4}{subsection.4.1}\protected@file@percent }
 \newlabel{subsec:exp_vs_num:drag}{{4.1}{4}{The need for drag forces on the pontoons}{subsection.4.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of numerical and experimental surge decay.\relax }}{4}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:exp_vs_num:drag:surge_decay}{{2}{4}{Comparison of numerical and experimental surge decay.\relax }{figure.caption.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of numerical and experimental heave decay.\relax }}{5}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:exp_vs_num:drag:heave_decay}{{3}{5}{Comparison of numerical and experimental heave decay.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of numerical and experimental surge decays.\relax }}{4}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:exp_vs_num:drag:surge_decay}{{2}{4}{Comparison of numerical and experimental surge decays.\relax }{figure.caption.2}{}}
+\citation{wang2022oc6}
+\citation{OC52017}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of numerical and experimental heave decays.\relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:exp_vs_num:drag:heave_decay}{{3}{5}{Comparison of numerical and experimental heave decays.\relax }{figure.caption.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Resulting drag coefficient for each Morison element and its main dimensions.\relax }}{5}{table.caption.4}\protected@file@percent }
 \newlabel{tab:exp_vs_num:drag:drag_coeffs}{{1}{5}{Resulting drag coefficient for each Morison element and its main dimensions.\relax }{table.caption.4}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison between the experimental and numerical values of the nondimensional quadratic drag coefficient ($B_Q/M$) obtained in the surge/heave decays.\relax }}{5}{table.caption.5}\protected@file@percent }
 \newlabel{tab:exp_vs_num:drag:quad_damp_decay}{{2}{5}{Comparison between the experimental and numerical values of the nondimensional quadratic drag coefficient ($B_Q/M$) obtained in the surge/heave decays.\relax }{table.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The importance of second-order forces on both horizontal and vertical motions}{5}{subsection.4.2}\protected@file@percent }
-\newlabel{subsec:exp_vs_num:2nd_order}{{4.2}{5}{The importance of second-order forces on both horizontal and vertical motions}{subsection.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}The impact of mean hull inclination when computing radiation/diffraction coefficients}{5}{subsection.4.3}\protected@file@percent }
-\newlabel{subsec:exp_vs_num:impact_inclination}{{4.3}{5}{The impact of mean hull inclination when computing radiation/diffraction coefficients}{subsection.4.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text  {Hz}$).\relax }}{6}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:exp_vs_num:drag:ptfmsurge}{{4}{6}{Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text {Hz}$).\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects).\relax }}{6}{figure.caption.7}\protected@file@percent }
-\newlabel{fig:exp_vs_num:drag:ptfmheave}{{5}{6}{Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects).\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text  {Hz}$). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }}{6}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:exp_vs_num:drag:ptfmsurge}{{4}{6}{Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text {Hz}$). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}The importance of second-order forces on both horizontal and vertical motions}{6}{subsection.4.2}\protected@file@percent }
+\newlabel{subsec:exp_vs_num:2nd_order}{{4.2}{6}{The importance of second-order forces on both horizontal and vertical motions}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}The impact of mean hull inclination when computing radiation/diffraction coefficients}{6}{subsection.4.3}\protected@file@percent }
+\newlabel{subsec:exp_vs_num:impact_inclination}{{4.3}{6}{The impact of mean hull inclination when computing radiation/diffraction coefficients}{subsection.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }}{7}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:exp_vs_num:drag:ptfmheave}{{5}{7}{Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Main results}{7}{subsection.4.4}\protected@file@percent }
+\newlabel{subsec:exp_vs_num:main_results}{{4.4}{7}{Main results}{subsection.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}The impact of rotor simplifications adopted in the model tests}{7}{section.5}\protected@file@percent }
+\newlabel{sec:impact_simplifications}{{5}{7}{The impact of rotor simplifications adopted in the model tests}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{7}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{7}{Conclusions}{section.6}{}}
 \bibstyle{cas-model2-names}
 \bibdata{mybibfile}
 \bibcite{azcona2014aerodynamic}{{1}{2014}{{Azcona et~al.}}{{Azcona, Bouchotrouch, Gonz{\'a}lez, Garciand{\'\i }a, Munduate, Kelberlau and Nygaard}}}
@@ -80,12 +91,6 @@
 \bibcite{bayati2018wind}{{3}{2018}{{Bayati et~al.}}{{Bayati, Facchinetti, Fontanella, Giberti and Belloli}}}
 \bibcite{belloli2020hybrid}{{4}{2020}{{Belloli et~al.}}{{Belloli, Bayati, Facchinetti, Fontanella, Giberti, La~Mura, Taruffi and Zasso}}}
 \bibcite{bredmose2017triple}{{5}{2017}{{Bredmose et~al.}}{{Bredmose, Lemmer, Borg, Pegalajar-Jurado, Mikkelsen, Larsen, Fjelstrup, Yu, Lomholt, Boehm et~al.}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Main results}{7}{subsection.4.4}\protected@file@percent }
-\newlabel{subsec:exp_vs_num:main_results}{{4.4}{7}{Main results}{subsection.4.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}The impact of rotor simplifications adopted in the model tests}{7}{section.5}\protected@file@percent }
-\newlabel{sec:impact_simplifications}{{5}{7}{The impact of rotor simplifications adopted in the model tests}{section.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{7}{section.6}\protected@file@percent }
-\newlabel{sec:conclusion}{{6}{7}{Conclusions}{section.6}{}}
 \bibcite{burmester2020}{{6}{2020}{{Burmester et~al.}}{{Burmester, Vaz, Gueydon and el~Moctar}}}
 \bibcite{cummins1962}{{7}{1962}{{Cummins}}{{}}}
 \bibcite{goupee2014experimental}{{8}{2014}{{Goupee et~al.}}{{Goupee, Koo, Kimball, Lambrakos and Dagher}}}
@@ -105,5 +110,6 @@
 \bibcite{skaare2007integrated}{{22}{2007}{{Skaare et~al.}}{{Skaare, Hanson, Nielsen, Yttervik, Hansen, Thomsen and Larsen}}}
 \bibcite{thys2018real}{{23}{2018}{{Thys et~al.}}{{Thys, Chabaud, Sauder, Eliassen, S{\ae }ther and Magnussen}}}
 \bibcite{wamitManual}{{24}{2004}{{WAMIT}}{{}}}
-\csxdef{lastpage}{8}
-\gdef \@abspage@last{8}
+\bibcite{wang2022oc6}{{25}{2022}{{Wang et~al.}}{{Wang, Robertson, Jonkman and Yu}}}
+\csxdef{lastpage}{9}
+\gdef \@abspage@last{9}

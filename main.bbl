@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -286,5 +286,15 @@
 \newblock \bibinfo{title}{{WAMIT} {U}ser {M}anual - {V}ersions 6.2, 6.2{PC},
   6.2{S}, 6.1{S}-{PC}}.
 \newblock \bibinfo{address}{Chestnut Hill, MA, USA}.
+%Type = Article
+\bibitem[{Wang et~al.(2022)Wang, Robertson, Jonkman and Yu}]{wang2022oc6}
+\bibinfo{author}{Wang, L.}, \bibinfo{author}{Robertson, A.},
+  \bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Yu, Y.H.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{{OC6} phase {I}: {I}mprovements to the {OpenFAST}
+  predictions of nonlinear, low-frequency responses of a floating offshore wind
+  turbine platform}.
+\newblock \bibinfo{journal}{Renewable Energy} \bibinfo{volume}{187},
+  \bibinfo{pages}{282--301}.
 
 \end{thebibliography}
