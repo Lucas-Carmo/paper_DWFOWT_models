@@ -16,17 +16,17 @@ where $\vec{u}=u_x\vec{e}_1+u_y\vec{e}_2$ is the relative fluid velocity (i.e. t
 The drag coefficients in each direction are obtained by matching numerical decays in surge and heave with their experimental counterparts, as illustrated in Figures~\ref{fig:exp_vs_num:drag:surge_decay}~and~\ref{fig:exp_vs_num:drag:heave_decay}. These decays were performed with the complete setup of the experiment, hence with both the mooring lines and the umbilical cables needed by the SIL method, but without either wind or waves. In the right side of each graph is presented a PQ-analysis~\citep{burmester2020}, in which the slope of the curve corresponds to the quadratic damping, while the intersection with the $y$ axis is proportional to the linear damping. It turns out that the latter, which is mostly due to wave radiation, is negligible, being relevant only when the amplitude of motion is very small (note that the experiment provides a negative value for the linear heave damping, which is clearly not physical and a consequence of the small values involved). On the other hand, the quadratic damping, which is obtained considering the drag coefficients summarized in Table~\ref{tab:exp_vs_num:drag:drag_coeffs}, is within the range of values measured in the experiments (3 repetitions in surge and 7 in heave), as shown in Table~\ref{tab:exp_vs_num:drag:quad_damp_decay} (a complete set of decay results is given in Table~\textcolor{red}{5}). Note that it would be impossible to match the damping levels in both dofs simultaneously if the pontoons were modeled using circular Morison elements, since both $D$ and $C_D$ are different for each direction. 
 \begin{figure}[!hbtp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{./figures/surge_decay_drag_pontoon.png}	
-	\caption{Comparison of numerical and experimental surge decays.} \label{fig:exp_vs_num:drag:surge_decay}
-\end{figure}
+	\includegraphics[width=0.9\textwidth]{./figures/surge_decay_drag_pontoon.png}%	
+	\caption{Comparison of numerical and experimental surge decays.} \label{fig:exp_vs_num:drag:surge_decay}%
+\end{figure}%
 
 \begin{figure}[!hbtp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{./figures/heave_decay_drag_pontoon.png}	
-	\caption{Comparison of numerical and experimental heave decays.} \label{fig:exp_vs_num:drag:heave_decay}
-\end{figure}
+	\includegraphics[width=0.9\textwidth]{./figures/heave_decay_drag_pontoon.png}%	
+	\caption{Comparison of numerical and experimental heave decays.} \label{fig:exp_vs_num:drag:heave_decay}%
+\end{figure}%
 
-Though the drag coefficients obtained from decay tests are not necessarily the same required by simulations considering waves, the values provided in Table~\ref{tab:exp_vs_num:drag:drag_coeffs} have led to good results for all the wave and wind conditions analyzed in this work, as will be shown in Section~\ref{subsec:exp_vs_num:main_results}. For now, a single test case is enough to illustrate the influence of the drag forces. For that, Figures~\ref{fig:exp_vs_num:drag:ptfmsurge}~and~\ref{fig:exp_vs_num:drag:ptfmheave} present the surge and heave motions of the FOWT under the action of the IRR-I1 wave ($T_P=14.5\,\text{m}$ and $H_S=9.3\,\text{m}$) and an incidence of 60\textdegree{}, without wind effects. To evidence the importance of the drag forces, the plots include results of simulations performed with circular Morison elements calibrated for the opposite dof, i.e. the results labeled \enquote{OpenFAST - Circ. pontoon S} presented in the heave graphs correspond to a circular pontoon with $D=6.0\,\text{m}$ and $C_D=2.50$, which are the values obtained from the surge decays; conversely, \enquote{OpenFAST - Circ. pontoon H} correspond to a circular pontoon calibrated using the heave decays.
+Though the drag coefficients obtained from decay tests are not necessarily the same required by simulations considering waves, the values provided in Table~\ref{tab:exp_vs_num:drag:drag_coeffs} have led to good results for all the wave and wind conditions analyzed in this work, as will be shown in Section~\ref{subsec:exp_vs_num:main_results}. For now, a single test case is enough to illustrate the influence of the drag forces. For that, Figures~\ref{fig:exp_vs_num:drag:ptfmsurge}~and~\ref{fig:exp_vs_num:drag:ptfmheave} present the surge and heave motions of the FOWT under the action of the IRR-I1 wave ($T_P=14.5\,\text{m}$ and $H_S=9.3\,\text{m}$) and an incidence of -10\textdegree{} (following the same convention as HydroDyn), without wind effects. To evidence the importance of the drag forces, the plots include results of simulations performed with circular Morison elements calibrated for the opposite dof, i.e. the results labeled \enquote{OpenFAST - Circ. pontoon S} presented in the heave graphs correspond to a circular pontoon with $D=6.0\,\text{m}$ and $C_D=2.50$, which are the values obtained from the surge decays; conversely, \enquote{OpenFAST - Circ. pontoon H} correspond to a circular pontoon calibrated using the heave decays.
 
 \begin{table}[!hbtp]
 	\caption{Resulting drag coefficient for each Morison element and its main dimensions.}\label{tab:exp_vs_num:drag:drag_coeffs}
@@ -38,9 +38,9 @@ Though the drag coefficients obtained from decay tests are not necessarily the s
 		Offset columns & 18.6 & 17.0 & 0.61 \\
 		Pontoons - Vertical & 23.0 & 17.0 & 12.00 \\
 		Pontoons - Horizontal & 23.0 & 6.0 & 2.50 \\
-		\bottomrule
-\end{tabular}
-\end{table}
+		\bottomrule%
+\end{tabular}%
+\end{table}%
 
 \begin{table}[!hbtp]
 	\caption{Comparison between the experimental and numerical values of the nondimensional quadratic drag coefficient ($B_Q/M$) obtained in the surge/heave decays.}\label{tab:exp_vs_num:drag:quad_damp_decay}
@@ -50,27 +50,26 @@ Though the drag coefficients obtained from decay tests are not necessarily the s
 		\midrule
 		Surge & $0.021\pm0.002$ & 0.019 \\
 		Heave & $0.145\pm0.022$ & 0.127 \\
-		\bottomrule
-	\end{tabular}
-\end{table}
+		\bottomrule%
+	\end{tabular}%
+\end{table}%
 
 The first set of graphs, Figure~\ref{fig:exp_vs_num:drag:ptfmsurge}, shows that the difference in drag models has a significant impact on the surge motion only around its resonance frequency, which is expected due to the different damping levels. However, the slow surge motion is underpredicted even by the OpenFAST model with rectangular pontoons and drag coefficients calibrated from decay tests. The main hypothesis is that this is related to an underprediction of the low-frequency force rather than an overprediction of damping, following the findings by \citet{wang2022oc6}, who showed that a third-order force that arises from computing the drag loads considering the instantaneous wave elevation (as opposed to the approach considered in this work, which integrates drag loads up to the mean water level) explained the underprediction of the slow surge motion reported by \cite{OC52017}. 
 
-\begin{figure}[!hbtp]
-	\centering
-	\includegraphics[width=\textwidth]{./figures/ptfmsurge-drag_pontoon.png}	
-	\caption{Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree{}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text{Hz}$). The range of frequencies corresponding to the incoming waves is shaded in blue.} \label{fig:exp_vs_num:drag:ptfmsurge}
-\end{figure}
-
-Though the effect on surge was important, the impact on heave is more critical, as illustrated in Figure~\ref{fig:exp_vs_num:drag:ptfmheave}. In this case, drag acts not only by damping the resonant response around $16.5\,\text{s}$ ($0.061\,\text{Hz}$), but also as a relevant forcing term around $15\,\text{s}$ ($0.067\,\text{Hz}$). This is made clear by the Heave RAOs\footnote{Obtained from the experiments and OpenFAST, which are in time domain, for the IRR-I1 wave.} plotted on the bottom right of the same figure, which show that the response predicted by WAMIT is almost zero at $15\,\text{s}$, a consequence of the force obtained with potential flow being null close to that period, while the result with OpenFAST considering the rectangular pontoon adheres very well to the experiment. This means that it would not be possible to model this behavior by tuning an external quadratic damping coefficient, as neglecting this forcing term would lead to important underpredictions of the motions. 
+The impact of drag on heave is more critical than observed for surge, as illustrated in Figure~\ref{fig:exp_vs_num:drag:ptfmheave}. In this case, it acts not only by damping the resonant response around $16.5\,\text{s}$ ($0.061\,\text{Hz}$), but also as a relevant forcing term around $15\,\text{s}$ ($0.067\,\text{Hz}$). This is made clear by the Heave RAOs plotted on the bottom right of the same figure, which show that the response predicted by WAMIT is almost zero at $15\,\text{s}$, a consequence of the force obtained with potential flow being null close to that period, while the result with OpenFAST considering the rectangular pontoon adheres very well to the experiment. This means that it would not be possible to model this behavior by tuning an external quadratic damping coefficient, as neglecting this forcing term would lead to important underpredictions of the motions. 
 
 Still about heave, it is noteworthy that a single set of drag coefficients, obtained from such a simple procedure as a decay test and using an equally simple approach as Morison's equation, was able to model pretty well both the situation in which drag acts by damping the motion and the one in which it plays the role of a forcing term.
 \begin{figure}[!hbtp]
 	\centering
-	\includegraphics[width=\textwidth]{./figures/ptfmheave-drag_pontoon.png}	
-	\caption{Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree{}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.} \label{fig:exp_vs_num:drag:ptfmheave}
+	\includegraphics[width=0.9\textwidth]{./figures/ptfmsurge-drag_pontoon.png}	
+	\caption{Illustration of the influence on surge motions of the drag forces on the pontoons (IRR-I1 wave, incidence of -10\textdegree{}, without wind effects). The bottom right plot is a zoom in linear scale of the PSD around the resonance frequency of surge (about $0.006\,\text{Hz}$). The range of frequencies corresponding to the incoming waves is shaded in blue.} \label{fig:exp_vs_num:drag:ptfmsurge}
 \end{figure}
 
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./figures/ptfmheave-drag_pontoon.png}	
+	\caption{Illustration of the influence on heave motions of the drag forces on the pontoons (IRR-I1 wave, incidence of 60\textdegree{}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.} \label{fig:exp_vs_num:drag:ptfmheave}%
+\end{figure}%
 
 
 
@@ -78,10 +77,25 @@ Still about heave, it is noteworthy that a single set of drag coefficients, obta
 
 
 
-\subsection{The importance of second-order forces on both horizontal and vertical motions} \label{subsec:exp_vs_num:2nd_order}
-Mostrar o offset e o pitch
 
-\subsection{The impact of mean hull inclination when computing  radiation/diffraction coefficients} \label{subsec:exp_vs_num:impact_inclination}
+\subsection{The importance of second-order wave forces for vertical motions} \label{subsec:exp_vs_num:2nd_order}
+The relevance of low-frequency second-order wave forces on the dynamics of FOWTs is well known and documented in the literature \citep{coulling2013, gueydon2014, lopez2015, OC52017, simos2018slow}, and this section is an addition to this ongoing discussion in order to emphasize the importance of this force component not only for the horizontal motions of the floater, but also for the vertical degrees of freedom.
+
+There are a number of approaches and simplifications that can be adopted to compute second-order forces. Due to its simplicity, the first procedure that was tested in this study was to compute the slow-drift forces using Newman's approximation \citep{newman1974}, but for the horizontal degrees of freedom only. This is a very simple approach because it only requires the mean forces/moments, which do not depend on the solution of the second-order problem, and the integrations are performed based on conservation of momentum, which is far less strict in terms of mesh convergence. For the reader familiar with WAMIT, this corresponds to the .8 files.
+
+This approach is usually enough for the analysis of floating systems in deep waters and for which surge, sway and yaw (typically with low natural frequencies) are the only degrees of freedom that present significant slow motions. Unfortunately, this is not the case for most FOWTs, including the one analyzed in this study, and analyzes considering complete sets of QTF (Quadratic Transfer Function) matrices are required. However, as one of the objectives of this work is to analyze the impact of mean hull inclination on the solution of the radiation/diffraction problem (discussed ahead in Section~\ref{subsec:exp_vs_num:impact_inclination}), it would be unfeasible to compute the completes QTFs for all the different conditions. For this reason, an intermediate approach is adopted in which Newman's approximation is used with a mixed mean drift file in which the horizontal degrees of freedom (surge, sway and yaw) are computed with conservation of momentum (WAMIT .8 file) while the vertical motions (heave, roll and pitch) are calculated using pressure integration (WAMIT .9 file). The advantage is that the convergence of pressure integration is more complicated for the horizontal dofs than for the vertical dofs due to the larger gradient near the free-surface, so this mixed procedure saves computational time.
+
+The results obtained for the pitch motion with each of these approaches are illustrated in Figure~\textcolor{red}{8}\footnote{The importance of slow surge forces was already made clear in Section~\ref{subsec:exp_vs_num:drag} by the resonant motion presented in Figure~\ref{fig:exp_vs_num:drag:ptfmsurge}}, considering the same wave as the previous section (IRR-I1 wave, i.e. $T_P=14.5\,\text{m}$, $H_S=9.3\,\text{m}$ and an incidence of -10\textdegree{}). It is clear that neglecting the slow-pitch forces (the simulations considering the .8 file alone) leads to an important underprediction of pitch motion: the predicted maximum angle of \textcolor{red}{2.0\textdegree{}} is considerably lower than the value of \textcolor{red}{4.0\textdegree{}} measured in the experiments. The results improve significantly when Newman's approximation is employed considering vertical mean forces (mixed .8 and .9 file), with the simulations providing a maximum angle of \textcolor{red}{4.0\textdegree{}}.
+
+
+
+
+
+
+
+
+
+\subsection{The impact of mean hull inclination when computing radiation/diffraction coefficients} \label{subsec:exp_vs_num:impact_inclination}
 As mentioned in Section~\ref{sec:numerical_models}, one of the objectives of this work is to assess the impact of considering the mean hull inclination caused by the wind when solving the radiation/diffraction problem. \textcolor{red}{Figure~X}, which summarizes in a boxplot the differences in the maxima obtained for each of the quantities analyzed in the previous sections for all the irregular waves, shows that this is not the case: in fact, the differences are .......... (falar também que a diferença é ainda mais irrelevante quando se pensa na tabela de extremos)
 
 **Mostrar um gráfico comparando as estatísticas calculadas c/ inclinação e sem.**
@@ -101,6 +115,6 @@ It is worth pointing out that only the impact on the radiation/diffraction coeff
 Explicar o procedimento adotado para processar a grande quantidade de ondas, que é baseado nas estatísticas.
 Mostrar tabela com períodos naturais e níveis de amortecimentos + tabela de resumo das estatísticas p/ ondas irregulares.
 
-Ilustrar c/ gráficos de séries temporais e espectros de casos selecionados (tem que ter a aerodinâmica p/ mostrar que o rotor tá funcionando) + gráfico do máximo e média
+Ilustrar c/ gráficos de séries temporais e espectros de casos selecionados (tem que ter a aerodinâmica p/ mostrar que o rotor tá funcionando) + gráfico do máximo e média (tentar colocar um monte na mesma figura)
 
 

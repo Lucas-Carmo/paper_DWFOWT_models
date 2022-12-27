@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1671804433 "main.aux" "main.bbl" "main" 1671804655
+["bibtex main"] 1672177307 "main.aux" "main.bbl" "main" 1672177702
   "./cas-model2-names.bst" 1643328513 31800 50c9da7327ed431cce3c915c6982e987 ""
-  "main.aux" 1671804655 11422 7a195ba73ed3278d5d8792c27f48310c "pdflatex"
-  "mybibfile.bib" 1671742935 10631 6c0f1920fa63be26fbee41a980916e8c ""
+  "main.aux" 1672177702 11935 14ad0efaed8254f4cedf1a18cbb9c90b "pdflatex"
+  "mybibfile.bib" 1672167975 12458 5216a66ee3f2c661d82e7416c17d46d4 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1671804653 "/home/lucas/Documents/paper_DWFOWT_models/main.tex" "main.pdf" "main" 1671804655
-  "/home/lucas/Documents/paper_DWFOWT_models/main.tex" 1671804653 7567 ef9631a5fab392686a256723b56ec1a0 ""
+["pdflatex"] 1672177701 "/home/lucas/Documents/paper_DWFOWT_models/main.tex" "main.pdf" "main" 1672177702
+  "/home/lucas/Documents/paper_DWFOWT_models/main.tex" 1671828404 7567 ef9631a5fab392686a256723b56ec1a0 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1650183167 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc" 1650179560 7013 c55cc8669071ac14036c4a0c96c16202 ""
@@ -198,16 +198,16 @@
   "figures/ptfmheave-drag_pontoon.png" 1671742934 185161 0c84d379d7b17e0b83babede2c724e61 ""
   "figures/ptfmsurge-drag_pontoon.png" 1671742934 159752 043cb4dfb45e4bd6ebcd6cc64b167b84 ""
   "figures/surge_decay_drag_pontoon.png" 1671728188 92670 982017ee5484c02d7673d97510c7c088 ""
-  "main.abs" 1671804654 15 7a4a35211f22d942796fdc982bd89b39 "pdflatex"
-  "main.aux" 1671804655 11422 7a195ba73ed3278d5d8792c27f48310c "pdflatex"
-  "main.bbl" 1671804433 16627 11df383e6d58dc55e0b83931706ec08f "bibtex main"
+  "main.abs" 1672177701 15 7a4a35211f22d942796fdc982bd89b39 "pdflatex"
+  "main.aux" 1672177702 11935 14ad0efaed8254f4cedf1a18cbb9c90b "pdflatex"
+  "main.bbl" 1672177307 19271 92b2301296ebc93fb9f64c884a1d9ce9 "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1671804653 7567 ef9631a5fab392686a256723b56ec1a0 ""
+  "main.tex" 1671828404 7567 ef9631a5fab392686a256723b56ec1a0 ""
   "sections/abstract.tex" 1664212273 46 92ffcc0471d0f3ce1655c2c61d87665e ""
   "sections/conclusions.tex" 1664199872 44 eaf578909bfc896f605aa97db869f5c8 ""
-  "sections/exp_vs_num.tex" 1671804431 12759 ab05b8f942392b8b9cf959010e314167 ""
+  "sections/exp_vs_num.tex" 1672177699 16107 a365bd6a393958fb718cbd5cbe695180 ""
   "sections/impact_simplifications.tex" 1670449497 438 3d521d49ede0b7c29afd42dc09cd11da ""
-  "sections/introduction.tex" 1671728188 7745 3a905755da2e89825bc42332f81db848 ""
+  "sections/introduction.tex" 1672017385 7745 3a905755da2e89825bc42332f81db848 ""
   "sections/model_and_experiment.tex" 1671560186 507 bba6647e119e78b8ed5bdc1f04c2f634 ""
   "sections/numerical_models.tex" 1671728188 1728 aeee4f9dcbd55a1ce12a123b608bd668 ""
   "thumbnails/cas-email.jpeg" 1660337860 8764 ae276cc9956197082d008c18ae4cbb28 ""

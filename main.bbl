@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -78,6 +78,18 @@
   turbine in surge decay using {CFD}}.
 \newblock \bibinfo{journal}{Ship Technology Research} \bibinfo{volume}{67},
   \bibinfo{pages}{2--14}.
+%Type = Inproceedings
+\bibitem[{Coulling et~al.(2013)Coulling, Goupee, Robertson and
+  Jonkman}]{coulling2013}
+\bibinfo{author}{Coulling, A.}, \bibinfo{author}{Goupee, A.},
+  \bibinfo{author}{Robertson, A.}, \bibinfo{author}{Jonkman, J.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Importance of second-order difference-frequency
+  wave-diffraction forces in the validation of a {FAST} semi-submersible
+  floating wind turbine model}, in:
+  \bibinfo{booktitle}{32\textsuperscript{\MakeLowercase{nd}} International
+  Conference on Ocean, Offshore and Arctic Engineering},
+  \bibinfo{organization}{ASME}. p. \bibinfo{pages}{V008T09A019}.
 %Type = Techreport
 \bibitem[{Cummins(1962)}]{cummins1962}
 \bibinfo{author}{Cummins, W.E.}, \bibinfo{year}{1962}.
@@ -94,6 +106,15 @@
   turbine concepts}.
 \newblock \bibinfo{journal}{Journal of Offshore Mechanics and Arctic
   Engineering} \bibinfo{volume}{136}.
+%Type = Inproceedings
+\bibitem[{Gueydon et~al.(2014)Gueydon, Duarte and Jonkman}]{gueydon2014}
+\bibinfo{author}{Gueydon, S.}, \bibinfo{author}{Duarte, T.},
+  \bibinfo{author}{Jonkman, J.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Comparison of second-order loads on a semisubmersible
+  floating wind turbine}, in:
+  \bibinfo{booktitle}{33\textsuperscript{\MakeLowercase{th}} International
+  Conference on Ocean, Offshore and Arctic Engineering},
+  \bibinfo{organization}{ASME}. p. \bibinfo{pages}{V09AT09A024}.
 %Type = Techreport
 \bibitem[{Jonkman and Buhl(2005)}]{jonkman2005fast}
 \bibinfo{author}{Jonkman, J.}, \bibinfo{author}{Buhl, M.},
@@ -109,6 +130,16 @@
   for {IEA Wind Task 23} offshore wind technology and deployment}.
 \newblock \bibinfo{type}{Technical Report}. National Renewable Energy
   Lab.(NREL), Golden, CO (United States). \bibinfo{address}{Golden, CO, USA}.
+%Type = Article
+\bibitem[{Lopez-Pavon et~al.(2015)Lopez-Pavon, Watai, Ruggeri, Simos and
+  {Souto-Iglesias}}]{lopez2015}
+\bibinfo{author}{Lopez-Pavon, C.}, \bibinfo{author}{Watai, R.A.},
+  \bibinfo{author}{Ruggeri, F.}, \bibinfo{author}{Simos, A.},
+  \bibinfo{author}{{Souto-Iglesias}, A.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Influence of wave induced second-order forces in
+  semisubmersible {FOWT} mooring design}.
+\newblock \bibinfo{journal}{Journal of Offshore Mechanics and Arctic
+  Engineering} \bibinfo{volume}{137}.
 %Type = Article
 \bibitem[{Martin et~al.(2014)Martin, Kimball, Viselli and
   Goupee}]{martin2014methodology}
@@ -140,6 +171,13 @@
   of a scaled floating offshore wind turbine}, in: \bibinfo{booktitle}{2018
   IEEE Conference on Control Technology and Applications (CCTA)},
   \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{1623--1630}.
+%Type = Inproceedings
+\bibitem[{Newman(1974)}]{newman1974}
+\bibinfo{author}{Newman, J.N.}, \bibinfo{year}{1974}.
+\newblock \bibinfo{title}{Second-order, slowly-varying forces on vessels in
+  irregular waves}, in: \bibinfo{booktitle}{Proc. Int. Symp. Dynamics of Marine
+  Vehicles and Structures in Waves}, \bibinfo{organization}{Mechanical
+  Engineering Publications Ltd.}, \bibinfo{address}{London, UK}.
 %Type = Inproceedings
 \bibitem[{Ogilvie(1964)}]{ogilvie1964}
 \bibinfo{author}{Ogilvie, T.F.}, \bibinfo{year}{1964}.
@@ -257,6 +295,16 @@
   \bibinfo{booktitle}{International Conference on Offshore Mechanics and Arctic
   Engineering}, \bibinfo{organization}{American Society of Mechanical
   Engineers}. p. \bibinfo{pages}{V006T09A039}.
+%Type = Article
+\bibitem[{Simos et~al.(2018)Simos, Ruggeri, Watai, Souto-Iglesias and
+  Lopez-Pavon}]{simos2018slow}
+\bibinfo{author}{Simos, A.N.}, \bibinfo{author}{Ruggeri, F.},
+  \bibinfo{author}{Watai, R.A.}, \bibinfo{author}{Souto-Iglesias, A.},
+  \bibinfo{author}{Lopez-Pavon, C.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Slow-drift of a floating wind turbine: {A}n
+  assessment of frequency-domain methods based on model tests}.
+\newblock \bibinfo{journal}{Renewable energy} \bibinfo{volume}{116},
+  \bibinfo{pages}{133--154}.
 %Type = Inproceedings
 \bibitem[{Skaare et~al.(2007)Skaare, Hanson, Nielsen, Yttervik, Hansen, Thomsen
   and Larsen}]{skaare2007integrated}
