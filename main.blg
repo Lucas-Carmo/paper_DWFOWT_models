@@ -8,45 +8,45 @@ Warning--missing institution in cummins1962
 Warning--empty pages in newman1974
 Warning--empty pages in ogilvie1964
 Warning--empty pages in OC42014
-You've used 30 entries,
+You've used 32 entries,
             2990 wiz_defined-function locations,
-            912 strings with 14450 characters,
-and the built_in function-call counts, 27718 in all, are:
-= -- 1966
-> -- 1612
+            920 strings with 15140 characters,
+and the built_in function-call counts, 29405 in all, are:
+= -- 2065
+> -- 1744
 < -- 19
-+ -- 624
-- -- 582
-* -- 3221
-:= -- 3910
-add.period$ -- 75
-call.type$ -- 30
-change.case$ -- 343
-chr.to.int$ -- 30
-cite$ -- 34
-duplicate$ -- 1969
-empty$ -- 1666
-format.name$ -- 668
-if$ -- 5229
++ -- 674
+- -- 630
+* -- 3432
+:= -- 4171
+add.period$ -- 80
+call.type$ -- 32
+change.case$ -- 368
+chr.to.int$ -- 32
+cite$ -- 36
+duplicate$ -- 2079
+empty$ -- 1751
+format.name$ -- 722
+if$ -- 5518
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 400
-newline$ -- 150
-num.names$ -- 120
-pop$ -- 701
+missing$ -- 427
+newline$ -- 159
+num.names$ -- 128
+pop$ -- 755
 preamble$ -- 1
-purify$ -- 313
+purify$ -- 336
 quote$ -- 0
-skip$ -- 730
+skip$ -- 755
 stack$ -- 0
-substring$ -- 765
-swap$ -- 1718
+substring$ -- 787
+swap$ -- 1813
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 288
 warning$ -- 4
-while$ -- 119
+while$ -- 125
 width$ -- 0
-write$ -- 434
+write$ -- 459
 (There were 4 warnings)

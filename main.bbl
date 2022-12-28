@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{32}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -11,6 +11,20 @@
 \providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Techreport
+\bibitem[{Allen et~al.(2020)Allen, Viscelli, Dagher, Goupee, Gaertner, Abbas,
+  Hall and Barter}]{allen2020definition}
+\bibinfo{author}{Allen, C.}, \bibinfo{author}{Viscelli, A.},
+  \bibinfo{author}{Dagher, H.}, \bibinfo{author}{Goupee, A.},
+  \bibinfo{author}{Gaertner, E.}, \bibinfo{author}{Abbas, N.},
+  \bibinfo{author}{Hall, M.}, \bibinfo{author}{Barter, G.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Definition of the {UMaine VolturnUS-S} reference
+  platform developed for the {IEA Wind} 15-{M}egawatt offshore reference wind
+  turbine}.
+\newblock \bibinfo{type}{Technical Report}. National Renewable Energy
+  Lab.(NREL), Golden, CO (United States); Univ. of Maine Univ. of Maine, Orono,
+  ME (United States).
 %Type = Inproceedings
 \bibitem[{Azcona et~al.(2014)Azcona, Bouchotrouch, Gonz{\'a}lez,
   Garciand{\'\i}a, Munduate, Kelberlau and Nygaard}]{azcona2014aerodynamic}
@@ -96,6 +110,15 @@
 \newblock \bibinfo{title}{The impulse response function and ship motions}.
 \newblock \bibinfo{type}{Technical Report}. \bibinfo{address}{Technical Report
   1661, David Taylor Model Basin}.
+%Type = Misc
+\bibitem[{Gaertner et~al.(2020)Gaertner, Rinker, Sethuraman, Zahle, Anderson,
+  Barter, Abbas et~al.}]{gaertner2020definition}
+\bibinfo{author}{Gaertner, E.}, \bibinfo{author}{Rinker, J.},
+  \bibinfo{author}{Sethuraman, L.}, \bibinfo{author}{Zahle, F.},
+  \bibinfo{author}{Anderson, B.}, \bibinfo{author}{Barter, G.},
+  \bibinfo{author}{Abbas, N.}, et~al., \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Definition of the {IEA Wind 15-Megawatt} offshore
+  reference wind turbine}.
 %Type = Article
 \bibitem[{Goupee et~al.(2014)Goupee, Koo, Kimball, Lambrakos and
   Dagher}]{goupee2014experimental}

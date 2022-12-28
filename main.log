@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.27)  27 DEC 2022 18:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.27)  28 DEC 2022 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -823,15 +823,26 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 <./figures/Perspectiva_semfundo.png, id=70, 462.22687pt x 765.6103pt>
 File: ./figures/Perspectiva_semfundo.png Graphic file (type png)
 <use ./figures/Perspectiva_semfundo.png>
-Package pdftex.def Info: ./figures/Perspectiva_semfundo.png  used on input line 15.
+Package pdftex.def Info: ./figures/Perspectiva_semfundo.png  used on input line 17.
 (pdftex.def)             Requested size: 138.66913pt x 229.68486pt.
- [2 <./figures/Perspectiva_semfundo.png>]) (./sections/model_and_experiment.tex) (./sections/numerical_models.tex) (./sections/exp_vs_num.tex [3]
-<./figures/surge_decay_drag_pontoon.png, id=134, 1400.23125pt x 676.02562pt>
+ [2 <./figures/Perspectiva_semfundo.png>]) (./sections/model_and_experiment.tex
+<./figures/CH-tpn.jpg, id=106, 462.528pt x 294.6207pt>
+File: ./figures/CH-tpn.jpg Graphic file (type jpg)
+<use ./figures/CH-tpn.jpg>
+Package pdftex.def Info: ./figures/CH-tpn.jpg  used on input line 7.
+(pdftex.def)             Requested size: 234.1662pt x 149.16214pt.
+<./figures/foto_modelo.png, id=113, 1462.46375pt x 3503.0875pt>
+File: ./figures/foto_modelo.png Graphic file (type png)
+<use ./figures/foto_modelo.png>
+Package pdftex.def Info: ./figures/foto_modelo.png  used on input line 19.
+(pdftex.def)             Requested size: 118.7624pt x 284.52756pt.
+ [3 <./figures/CH-TPN.jpg>]) (./sections/numerical_models.tex [4 <./figures/foto_modelo.png>]) (./sections/exp_vs_num.tex [5]
+<./figures/surge_decay_drag_pontoon.png, id=163, 1400.23125pt x 676.02562pt>
 File: ./figures/surge_decay_drag_pontoon.png Graphic file (type png)
 <use ./figures/surge_decay_drag_pontoon.png>
 Package pdftex.def Info: ./figures/surge_decay_drag_pontoon.png  used on input line 19.
 (pdftex.def)             Requested size: 421.49629pt x 203.49005pt.
-<./figures/heave_decay_drag_pontoon.png, id=135, 1377.64688pt x 676.02562pt>
+<./figures/heave_decay_drag_pontoon.png, id=164, 1377.64688pt x 676.02562pt>
 File: ./figures/heave_decay_drag_pontoon.png Graphic file (type png)
 <use ./figures/heave_decay_drag_pontoon.png>
 Package pdftex.def Info: ./figures/heave_decay_drag_pontoon.png  used on input line 25.
@@ -839,8 +850,8 @@ Package pdftex.def Info: ./figures/heave_decay_drag_pontoon.png  used on input l
 LaTeX Font Info:    Trying to load font information for TS1+stix on input line 29.
  (/usr/share/texmf-dist/tex/latex/stix/ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
-) [4 <./figures/surge_decay_drag_pontoon.png (PNG copy)>] [5 <./figures/heave_decay_drag_pontoon.png (PNG copy)>]
-<./figures/ptfmsurge-drag_pontoon.png, id=167, 1367.1075pt x 671.50874pt>
+) [6 <./figures/surge_decay_drag_pontoon.png (PNG copy)>]
+<./figures/ptfmsurge-drag_pontoon.png, id=190, 1367.1075pt x 671.50874pt>
 File: ./figures/ptfmsurge-drag_pontoon.png Graphic file (type png)
 <use ./figures/ptfmsurge-drag_pontoon.png>
 Package pdftex.def Info: ./figures/ptfmsurge-drag_pontoon.png  used on input line 64.
@@ -848,29 +859,50 @@ Package pdftex.def Info: ./figures/ptfmsurge-drag_pontoon.png  used on input lin
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 65.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<./figures/ptfmheave-drag_pontoon.png, id=168, 1376.89406pt x 663.98062pt>
+) [7 <./figures/heave_decay_drag_pontoon.png (PNG copy)>]
+<./figures/ptfmheave-drag_pontoon.png, id=197, 1376.89406pt x 663.98062pt>
 File: ./figures/ptfmheave-drag_pontoon.png Graphic file (type png)
 <use ./figures/ptfmheave-drag_pontoon.png>
 Package pdftex.def Info: ./figures/ptfmheave-drag_pontoon.png  used on input line 70.
 (pdftex.def)             Requested size: 421.49629pt x 203.25845pt.
- [6 <./figures/ptfmsurge-drag_pontoon.png (PNG copy)> <./figures/ptfmheave-drag_pontoon.png (PNG copy)>] [7]) (./sections/impact_simplifications.tex) (./sections/conclusions.tex) (./main.bbl [8]) [9] (./main.aux)
+ [8 <./figures/ptfmsurge-drag_pontoon.png (PNG copy)> <./figures/ptfmheave-drag_pontoon.png (PNG copy)>]
+File: ./figures/ptfmheave-drag_pontoon.png Graphic file (type png)
+<use ./figures/ptfmheave-drag_pontoon.png>
+Package pdftex.def Info: ./figures/ptfmheave-drag_pontoon.png  used on input line 96.
+(pdftex.def)             Requested size: 421.49629pt x 203.25845pt.
+ [9]
+<./figures/ek_vs_ic-motions.png, id=234, 1212.78094pt x 679.78969pt>
+File: ./figures/ek_vs_ic-motions.png Graphic file (type png)
+<use ./figures/ek_vs_ic-motions.png>
+Package pdftex.def Info: ./figures/ek_vs_ic-motions.png  used on input line 115.
+(pdftex.def)             Requested size: 234.1662pt x 131.24629pt.
+<./figures/ek_vs_ic-forces.png, id=235, 1202.99437pt x 666.99188pt>
+File: ./figures/ek_vs_ic-forces.png Graphic file (type png)
+<use ./figures/ek_vs_ic-forces.png>
+Package pdftex.def Info: ./figures/ek_vs_ic-forces.png  used on input line 121.
+(pdftex.def)             Requested size: 234.1662pt x 129.82372pt.
+<./figures/ek_vs_ic-accs.png, id=236, 1230.09563pt x 679.78969pt>
+File: ./figures/ek_vs_ic-accs.png Graphic file (type png)
+<use ./figures/ek_vs_ic-accs.png>
+Package pdftex.def Info: ./figures/ek_vs_ic-accs.png  used on input line 127.
+(pdftex.def)             Requested size: 234.1662pt x 129.39995pt.
+ [10 <./figures/ek_vs_ic-motions.png (PNG copy)> <./figures/ek_vs_ic-forces.png (PNG copy)>]) (./sections/impact_simplifications.tex) (./sections/conclusions.tex) (./main.bbl [11 <./figures/ek_vs_ic-accs.png (PNG copy)>] [12]) [13] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19701 strings out of 478238
- 309105 string characters out of 5850455
- 696502 words of memory out of 5000000
- 37489 multiletter control sequences out of 15000+600000
+ 19776 strings out of 478238
+ 311224 string characters out of 5850455
+ 701989 words of memory out of 5000000
+ 37545 multiletter control sequences out of 15000+600000
  591171 words of font info for 201 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,77p,1808b,561s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,13n,77p,1812b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}</usr/share/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix/STIXGeneral-Italic.pfb></usr/share/texmf-dist/fonts/type1/public/stix/STIXGeneral-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf-dist/fonts/type1/public/stix/stix-mathex.pfb></usr/share/texmf-dist/fonts/type1/public/stix/stix-mathit.pfb></usr/share/texmf-dist/fonts/type1/public/stix/stix-mathrm-bold.pfb></usr/share/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb>
-Output written on main.pdf (9 pages, 859585 bytes).
+Output written on main.pdf (13 pages, 10100777 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
