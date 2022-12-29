@@ -132,6 +132,14 @@
 }
 \makeatother
 
+
+% Keep floats inside subsection
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
+
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+
 %%=====
 %====== END OF MY MODIFICATIONS
 %%=====
@@ -147,7 +155,7 @@
 \shorttitle{Discussion on some relevant aspects for the experimental and numerical analysis of FWTs}
 
 % Short author
-\shortauthors{L. H. S. Carmo, P. C. de Mello, Renato M. Monaro and A. N. Simos}
+\shortauthors{L. H. S. do Carmo, P. C. de Mello, R. M. Monaro and A. N. Simos}
 
 % Main title of the paper
 \title [mode = title]{A discussion on some relevant aspects for the experimental and numerical analysis of floating wind turbines based on a test case}
@@ -173,7 +181,7 @@
 %       twitter=<twitter id>,
 %       linkedin=<linkedin id>,
 %       gplus=<gplus id>]
-\author[1]{Lucas H. S. Carmo}[orcid=0000-0001-8744-1391]
+\author[1]{Lucas H. S. do Carmo}[orcid=0000-0001-8744-1391]
 
 % Corresponding author indication
 \cormark[1]

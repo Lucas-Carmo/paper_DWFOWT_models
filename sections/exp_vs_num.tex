@@ -13,21 +13,20 @@ The first point concerns the drag forces on the pontoons of the hull, which are 
 %
 where $\vec{u}=u_x\vec{e}_1+u_y\vec{e}_2$ is the relative fluid velocity (i.e. the difference between fluid velocity and local body velocity); $\vec{e}_1$ and $\vec{e}_2$ are the unit vectors directed along the local $x$ and $y$ axes, which are normal to the lateral faces of the rectangular cylinder; $C_{Dx}$ and $C_{Dy}$ are the drag coefficients in each direction; and $D_x$ and $D_y$ are the sides of the rectangle.
 
-The drag coefficients in each direction are obtained by matching numerical decays in surge and heave with their experimental counterparts, as illustrated in Figures~\ref{fig:exp_vs_num:drag:surge_decay}~and~\ref{fig:exp_vs_num:drag:heave_decay}. These decays were performed with the complete setup of the experiment, hence with both the mooring lines and the umbilical cables needed by the SIL method, but without either wind or waves. In the right side of each graph is presented a PQ-analysis~\citep{burmester2020}, in which the slope of the curve corresponds to the quadratic damping, while the intersection with the $y$ axis is proportional to the linear damping. It turns out that the latter, which is mostly due to wave radiation, is negligible, being relevant only when the amplitude of motion is very small (note that the experiment provides a negative value for the linear heave damping, which is clearly not physical and a consequence of the small values involved). On the other hand, the quadratic damping, which is obtained considering the drag coefficients summarized in Table~\ref{tab:exp_vs_num:drag:drag_coeffs}, is within the range of values measured in the experiments (3 repetitions in surge and 7 in heave), as shown in Table~\ref{tab:exp_vs_num:drag:quad_damp_decay} (a complete set of decay results is given in Table~\textcolor{red}{5}). Note that it would be impossible to match the damping levels in both dofs simultaneously if the pontoons were modeled using circular Morison elements, since both $D$ and $C_D$ are different for each direction. 
+The drag coefficients in each direction are obtained by matching numerical decays in surge and heave with their experimental counterparts, as illustrated in Figures~\ref{fig:exp_vs_num:drag:surge_decay}~and~\ref{fig:exp_vs_num:drag:heave_decay}. These decays were performed with the complete setup of the experiment, hence with both the mooring lines and the umbilical cables needed by the SIL method, but without either wind or waves. On the right side of each graph is presented a PQ-analysis~\citep{burmester2020}, in which the slope of the curve corresponds to the quadratic damping, while the intersection with the $y$ axis is proportional to the linear damping. It turns out that the latter, which is mostly due to wave radiation, is negligible, being relevant only when the amplitude of motion is very small (note that the experiment provides a negative value for the linear heave damping, which is clearly not physical and a consequence of the small values involved). On the other hand, the quadratic damping, which is obtained considering the drag coefficients summarized in Table~\ref{tab:exp_vs_num:drag:drag_coeffs}, is within the range measured in the experiments (3 repetitions in surge and 7 in heave), as shown by the values presented in the same figures (a complete set of decay results is given in Table~\textcolor{red}{5}). Note that it would be impossible to match the damping levels in both dofs simultaneously if the pontoons were modeled using circular Morison elements, since both $D$ and $C_D$ are different for each direction. 
 \begin{figure*}[!hbtp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{./figures/surge_decay_drag_pontoon.png}%	
-	\caption{Comparison of numerical and experimental surge decays.} \label{fig:exp_vs_num:drag:surge_decay}%
+	\includegraphics[width=0.80\textwidth]{./figures/surge_decay_drag_pontoon.png}%	
+	\caption{Comparison of numerical and experimental surge decays. $B_Q/M$ is the nondimensional quadratic drag coefficient.} \label{fig:exp_vs_num:drag:surge_decay}%
 \end{figure*}%
 
 \begin{figure*}[!hbtp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{./figures/heave_decay_drag_pontoon.png}%	
-	\caption{Comparison of numerical and experimental heave decays.} \label{fig:exp_vs_num:drag:heave_decay}%
+	\includegraphics[width=0.80\textwidth]{./figures/heave_decay_drag_pontoon.png}%	
+	\caption{Comparison of numerical and experimental heave decays. $B_Q/M$ is the nondimensional quadratic drag coefficient.} \label{fig:exp_vs_num:drag:heave_decay}%
 \end{figure*}%
 
-Though the drag coefficients obtained from decay tests are not necessarily the same required by simulations considering waves, the values provided in Table~\ref{tab:exp_vs_num:drag:drag_coeffs} have led to good results for all the wave and wind conditions analyzed in this work, as will be shown in Section~\ref{subsec:exp_vs_num:main_results}. For now, a single test case is enough to illustrate the influence of the drag forces. For that, Figures~\ref{fig:exp_vs_num:drag:ptfmsurge}~and~\ref{fig:exp_vs_num:drag:ptfmheave} present the surge and heave motions of the FOWT under the action of the IRR-I1 wave ($T_P=14.5\,\text{m}$ and $H_S=9.3\,\text{m}$) and an incidence of -10\textdegree{}, without wind effects. To evidence the importance of the drag forces, the plots include results of simulations performed with circular Morison elements calibrated for the opposite dof, i.e. the results labeled \enquote{OpenFAST - Circ. pontoon S} presented in the heave graphs correspond to a circular pontoon with $D=6.0\,\text{m}$ and $C_D=2.50$, which are the values obtained from the surge decays; conversely, \enquote{OpenFAST - Circ. pontoon H} correspond to a circular pontoon calibrated using the heave decays.
-
+Though the drag coefficients obtained from decay tests are not necessarily the same required by simulations considering waves, the values provided in Table~\ref{tab:exp_vs_num:drag:drag_coeffs} have led to good results for all the wave and wind conditions analyzed in this work, as will be shown in Section~\ref{subsec:exp_vs_num:main_results}. For now, a single test case is enough to illustrate the influence of the drag forces. For that, Figures~\ref{fig:exp_vs_num:drag:ptfmsurge}~and~\ref{fig:exp_vs_num:drag:ptfmheave} present the surge and heave motions of the FOWT under the action of the IRR-I1 wave ($T_P=14.5\,\text{m}$ and $H_S=9.3\,\text{m}$) and an incidence of -10\textdegree{}, without wind effects. To evidence the importance of the drag forces, the plots include results of simulations performed with circular Morison elements calibrated for the opposite dof, i.e. the results labeled \enquote{OpenFAST - Circ. S} presented in the heave graphs correspond to a circular pontoon with $D=6.0\,\text{m}$ and $C_D=2.50$, which are the values obtained from the surge decays; conversely, \enquote{OpenFAST - Circ. H} correspond to a circular pontoon calibrated using the heave decays.
 \begin{table}[!hbtp]
 	\caption{Resulting drag coefficient for each Morison element and its main dimensions.}\label{tab:exp_vs_num:drag:drag_coeffs}
 	\begin{tabular}{lrrr}
@@ -40,18 +39,6 @@ Though the drag coefficients obtained from decay tests are not necessarily the s
 		Pontoons - Horizontal & 23.0 & 6.0 & 2.50 \\
 		\bottomrule%
 \end{tabular}%
-\end{table}%
-
-\begin{table}[!hbtp]
-	\caption{Comparison between the experimental and numerical values of the nondimensional quadratic drag coefficient ($B_Q/M$) obtained in the surge/heave decays.}\label{tab:exp_vs_num:drag:quad_damp_decay}
-	\begin{tabular}{crr}
-		\toprule
-		& Experiment & OpenFAST \\
-		\midrule
-		Surge & $0.021\pm0.002$ & 0.019 \\
-		Heave & $0.145\pm0.022$ & 0.127 \\
-		\bottomrule%
-	\end{tabular}%
 \end{table}%
 
 The first set of graphs, Figure~\ref{fig:exp_vs_num:drag:ptfmsurge}, shows that the difference in drag models has a significant impact on the surge motion only around its resonance frequency, which is expected due to the different damping levels. However, the slow surge motion is underpredicted even by the OpenFAST model with rectangular pontoons and drag coefficients calibrated from decay tests. The main hypothesis is that this is related to an underprediction of the low-frequency force rather than an overprediction of damping, following the findings by \citet{wang2022oc6}, who showed that a third-order force that arises from computing the drag loads considering the instantaneous wave elevation (as opposed to the approach considered in this work, which integrates drag loads up to the mean water level) explained the underprediction of the slow surge motion reported by \cite{OC52017}. 
