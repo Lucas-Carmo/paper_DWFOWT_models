@@ -112,4 +112,77 @@ Tem que incluir o controle. Adicionar alguns resultados de teste de bancada?
 
 
 \subsection{Environmental conditions} \label{sec:description_experiment:envir}
-- Condições de onda e vento
+%APR01: 30 condicoes
+%- IRR-I1: IDLE
+%- IRR11: WV10, WV13, TURB - 3
+%- IRR12: WV10, WV13, TURB - 3
+%- IRR13: WV10, WV13, TURB - 3
+%- IRR-S1: IDLE, WV10 (2incidencias), WV13, TURB - 5
+%- IRR-S2: IDLE, WV10 (2incidencias), WV13, TURB - 5
+%- IRR-S3: IDLE, WV10 (2incidencias), WV13, TURB - 5
+%- IRR-S4: IDLE, WV10 (2incidencias), WV13, TURB - 5
+%
+%
+%APR02: 25 condicoes
+%- IRR-I2: IDLE
+%- IRR-S1: IDLE, WV10, WV13, TURB - 4
+%- IRR-S2: IDLE, WV10, WV13, TURB - 4
+%- IRR-S3: IDLE, WV10 (4 incidencias), WV13 (4 incidencias), TURB (3 incidencias) - 12
+%- IRR-S4: IDLE, WV10, WV13, TURB - 4
+%
+%
+%APR03: 23 condicoes
+%- APR-I3: IDLE
+%- IRR31:  WV10, WV13, TURB - 3
+%- IRR-S1: IDLE, WV10, WV13, TURB - 4
+%- IRR-S2: IDLE, WV10, WV13, TURB - 4
+%- IRR-S3: IDLE, WV10 (2 incidencias), WV13 (2 incidencias), TURB (2 incidencias) - 7
+%- IRR-S4: IDLE, WV10, WV13, TURB - 4
+
+\begin{table*}[htbp]
+	\centering
+	\caption{List of wave conditions and wind incidences considered in this work.}
+	\begin{tabular}{cccccccc}
+		\toprule
+		\multicolumn{4}{c}{Wave}            & \multicolumn{3}{c}{Wind incidences} & \multirow{2}{*}{Idle}\\
+		\cmidrule(lr){1-4}
+		\cmidrule(lr){5-7}
+		\multicolumn{1}{l}{Incidence} & ID    & Tp (s)    & Hs (m)    & WV10  & WV13  & TURB & \\
+		\midrule
+		\multirow{8}[2]{*}{-10\textdegree{}} & IRR-I1 & 14.5  & 9.30      & -     & -     & - & Yes\\
+		& IRR-11 & 14.0  & 6.65  & 10\textdegree{}    & 10\textdegree{}    & 10\textdegree{} & No\\
+		& IRR-12 & 11.3  & 4.44  & -20\textdegree{}   & -20\textdegree{}   & -20\textdegree{} & No \\
+		& IRR-13 & 13.8  & 3.01  & 47\textdegree{}    & 47\textdegree{}    & 47\textdegree{} & No\\
+		& IRR-S1 & 10.0  & 1.00  & 10\textdegree{}    & 10\textdegree{}; 47\textdegree{} & 10\textdegree{} & Yes\\
+		& IRR-S2 & 10.0  & 2.00  & 10\textdegree{}    & 10\textdegree{}; 47\textdegree{} & 10\textdegree{} & Yes\\
+		& IRR-S3 & 10.0  & 3.00  & 10\textdegree{}    & 10\textdegree{}; 47\textdegree{} & 10\textdegree{} & Yes\\
+		& IRR-S4 & 10.0  & 4.00  & 10\textdegree{}    & 10\textdegree{}; 47\textdegree{} & 10\textdegree{} & Yes\\
+		\midrule
+		\multirow{5}[2]{*}{90\textdegree{}} & IRR-I2 & 12.0  & 6.12 & -     & -     & - & Yes\\
+		& IRR-S1 & 10.0  & 1.00  & -110\textdegree{}  & -110\textdegree{}  & -110\textdegree{} & Yes\\
+		& IRR-S2 & 10.0  & 2.00  & -110\textdegree{}  & -110\textdegree{}  & -110\textdegree{} & Yes\\
+		& IRR-S3 & 10.0  & 3.00  & \begin{tabular}{c} -200\textdegree{}; -45\textdegree{}\\ -110\textdegree{}; -90\textdegree{}\end{tabular} & \begin{tabular}{c} -200\textdegree{}; -45\textdegree{}\\ -110\textdegree{}; -90\textdegree{}\end{tabular} & \begin{tabular}{c} -200\textdegree{}; -45\textdegree{}\\ -110\textdegree{}; -90\textdegree{}\end{tabular} & Yes\\
+		& IRR-S4 & 10.0  & 4.00  & -110  & -110  & -110 & Yes\\
+		\midrule
+		\multirow{6}[2]{*}{60\textdegree{}} & IRR-I3 & 12.8  & 6.84 & -     & -     & - & Yes\\
+		& IRR-31 & 14.5  & 3.00  & -60\textdegree{}   & -60\textdegree{}   & -60\textdegree{} & No\\
+		& IRR-S1 & 10.0  & 1.00  & -60\textdegree{}   & -60\textdegree{}   & -60\textdegree{} & Yes\\
+		& IRR-S2 & 10.0  & 2.00  & -60\textdegree{}   & -60\textdegree{}   & -60\textdegree{} & Yes\\
+		& IRR-S3 & 10.0  & 3.00  & -60\textdegree{}; -120\textdegree{} & -60\textdegree{}; -120\textdegree{} & -60\textdegree{}; -120\textdegree{} & Yes\\
+		& IRR-S4 & 10.0  & 4.00  & -60\textdegree{}   & -60\textdegree{}   & -60\textdegree{} & Yes\\
+		\bottomrule
+	\end{tabular}%
+	\label{tab:addlabel}%
+\end{table*}%
+
+
+
+\begin{figure}[!hbtp]
+	\centering
+	\includegraphics[trim={0 0 0 1.5cm},clip, width=0.4\columnwidth]{./figures/APR01.png}
+	\caption{Illustration of one of the headings tested in the experiments, with the wave incidence in blue and the wind in green. \textcolor{red}{Melhorar essa figura}} \label{fig:description_experiment:APR01}%
+\end{figure}%
+
+
+
+
