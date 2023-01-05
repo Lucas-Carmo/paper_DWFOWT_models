@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1672343030 "main.aux" "main.bbl" "main" 1672343038
+["bibtex main"] 1672772652 "main.aux" "main.bbl" "main" 1672772659
   "./cas-model2-names.bst" 1643328513 31800 50c9da7327ed431cce3c915c6982e987 ""
-  "main.aux" 1672343037 16048 3794b2b0248a9c71ec9e514665e56cb0 "pdflatex"
+  "main.aux" 1672772658 17229 e424d477b4041845774e2578a60502fc "pdflatex"
   "mybibfile.bib" 1672260378 13303 3582c616919de67e591d56f8d5bdfa62 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1672343031 "/home/lucas/Documents/paper_DWFOWT_models/main.tex" "main.pdf" "main" 1672343038
+["pdflatex"] 1672772653 "/home/lucas/Documents/paper_DWFOWT_models/main.tex" "main.pdf" "main" 1672772659
   "/home/lucas/Documents/paper_DWFOWT_models/main.tex" 1672343024 7802 8a94d74308e2cc39abfdb6efc904797d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1650183167 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1650183167 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -195,6 +195,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1669599369 2927664 5b98558f9bd9ae4367c467fb5a33944e ""
   "cas-common.sty" 1643328513 76661 edd5b8a98de28a359bf90630ef49c969 ""
   "cas-sc.cls" 1643328513 4409 f271eb20a758fc9ea5551304eb312def ""
+  "figures/APR01.png" 1672752574 32766 72a5d5ead126810f60bf77b08d286b89 ""
   "figures/CH-TPN.jpg" 1662893707 982099 32e4ee2d291226c9bbd46abbb8a073e9 ""
   "figures/Perspectiva_semfundo.png" 1671728188 54067 4fbdcdf51542d8006c658a797fff6cb2 ""
   "figures/ek_vs_ic-accs.png" 1672255211 47418 de6648ddada5b8653a0fba7c3e07abc5 ""
@@ -204,19 +205,20 @@
   "figures/foto_mooring.png" 1672335448 23752698 0c527c2c2ceb3b7df698928b862871ec ""
   "figures/heave_decay_drag_pontoon.png" 1672338649 121439 facd43da2287c5ca91af6b40af462a08 ""
   "figures/ptfmheave-drag_pontoon.png" 1671742934 185161 0c84d379d7b17e0b83babede2c724e61 ""
+  "figures/ptfmpitch-2nd_order.png" 1672752574 165566 5a651c245c353d5086f3ad5ea7cfe307 ""
   "figures/ptfmsurge-drag_pontoon.png" 1671742934 159752 043cb4dfb45e4bd6ebcd6cc64b167b84 ""
   "figures/surge_decay_drag_pontoon.png" 1672338419 129859 58f090311031f5c77579f5ad83ab33ec ""
-  "main.abs" 1672343032 15 7a4a35211f22d942796fdc982bd89b39 "pdflatex"
-  "main.aux" 1672343037 16048 3794b2b0248a9c71ec9e514665e56cb0 "pdflatex"
-  "main.bbl" 1672343030 20511 a224a7a8d9ca0676225e8d4bb86b6da6 "bibtex main"
+  "main.abs" 1672772653 15 7a4a35211f22d942796fdc982bd89b39 "pdflatex"
+  "main.aux" 1672772658 17229 e424d477b4041845774e2578a60502fc "pdflatex"
+  "main.bbl" 1672772653 20511 a224a7a8d9ca0676225e8d4bb86b6da6 "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1672343024 7802 8a94d74308e2cc39abfdb6efc904797d ""
   "sections/abstract.tex" 1664212273 46 92ffcc0471d0f3ce1655c2c61d87665e ""
   "sections/conclusions.tex" 1664199872 44 eaf578909bfc896f605aa97db869f5c8 ""
-  "sections/exp_vs_num.tex" 1672338930 18636 34fdb5a125477396a2ae7aaf46ebffcc ""
-  "sections/impact_simplifications.tex" 1670449497 438 3d521d49ede0b7c29afd42dc09cd11da ""
+  "sections/exp_vs_num.tex" 1672752574 18733 449e753318a7ca6cee89a26b378a3d96 ""
+  "sections/impact_simplifications.tex" 1672772645 471 56d8e33fbc6bf9092ec2687cdb21fb8a ""
   "sections/introduction.tex" 1672258362 7884 cfb305346d831435cbd5d22117651331 ""
-  "sections/model_and_experiment.tex" 1672337522 7709 47468b1046738d70f765d937e0be969c ""
+  "sections/model_and_experiment.tex" 1672752574 11515 89f908832815b09200495697c6a767d6 ""
   "sections/numerical_models.tex" 1672256193 1823 b7467c2d467fdf4b5af0807ce6a32c46 ""
   "thumbnails/cas-email.jpeg" 1660337860 8764 ae276cc9956197082d008c18ae4cbb28 ""
   (generated)

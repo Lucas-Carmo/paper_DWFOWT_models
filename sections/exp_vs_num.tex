@@ -2,7 +2,7 @@
 As outlined in Section~\ref{sec:introduction}, the purpose of this section is to discuss the relevance of three specific points concerning the hydrodynamic modeling in the numerical simulations, in light of the experimental results: the drag forces on the pontoons (Section~\ref{subsec:exp_vs_num:drag}); the need for second-order wave forces not only for the horizontal motions, but also for the vertical dofs (Section~\ref{subsec:exp_vs_num:2nd_order}); and whether the mean hull inclination induced by the wind needs to be considered in the solution of the radiation/diffraction problem (Section~\ref{subsec:exp_vs_num:impact_inclination}). After these aspects have been discussed, Section~\ref{subsec:exp_vs_num:main_results} summarizes the main results to show the adherence between the numerical simulations and the experiment.
 
 
-\subsection{The need for drag forces on the pontoons} \label{subsec:exp_vs_num:drag}
+\subsection{The need for distinct orthogonal drag coefficients when modelling the pontoons} \label{subsec:exp_vs_num:drag}
 The first point concerns the drag forces on the pontoons of the hull, which are relevant not only due to the damping that they introduce, but also because drag is and important forcing term for this type of floater. These forces are modeled in OpenFAST using Morison elements, but since the current version of the software includes only circular elements, the source code was modified to account for elements with rectangular cross section. In this modified version, the drag forces per unit length are given by:
 \begin{equation}
 \begin{split}

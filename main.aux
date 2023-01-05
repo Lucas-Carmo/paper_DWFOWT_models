@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -70,8 +73,8 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4}Reproducing the experiments with numerical models}{6}{section.4}\protected@file@percent }
 \newlabel{sec:exp_vs_num}{{4}{6}{Reproducing the experiments with numerical models}{section.4}{}}
 \citation{burmester2020}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The need for drag forces on the pontoons}{7}{subsection.4.1}\protected@file@percent }
-\newlabel{subsec:exp_vs_num:drag}{{4.1}{7}{The need for drag forces on the pontoons}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}The need for distinct orthogonal drag coefficients when modelling the pontoons}{7}{subsection.4.1}\protected@file@percent }
+\newlabel{subsec:exp_vs_num:drag}{{4.1}{7}{The need for distinct orthogonal drag coefficients when modelling the pontoons}{subsection.4.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of numerical and experimental surge decays. $B_Q/M$ is the nondimensional quadratic drag coefficient.\relax }}{7}{figure.caption.8}\protected@file@percent }
 \newlabel{fig:exp_vs_num:drag:surge_decay}{{5}{7}{Comparison of numerical and experimental surge decays. $B_Q/M$ is the nondimensional quadratic drag coefficient.\relax }{figure.caption.8}{}}
 \citation{wang2022oc6}
@@ -101,15 +104,15 @@
 \bibcite{allen2020definition}{{1}{2020}{{Allen et~al.}}{{Allen, Viscelli, Dagher, Goupee, Gaertner, Abbas, Hall and Barter}}}
 \bibcite{azcona2014aerodynamic}{{2}{2014}{{Azcona et~al.}}{{Azcona, Bouchotrouch, Gonz{\'a}lez, Garciand{\'\i }a, Munduate, Kelberlau and Nygaard}}}
 \bibcite{bachynski2016real}{{3}{2016}{{Bachynski et~al.}}{{Bachynski, Thys, Sauder, Chabaud and S{\ae }ther}}}
-\bibcite{bayati2018wind}{{4}{2018}{{Bayati et~al.}}{{Bayati, Facchinetti, Fontanella, Giberti and Belloli}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Pitch motions obtained with different approaches for the second-order wave forces (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }}{12}{figure.caption.16}\protected@file@percent }
 \newlabel{fig:exp_vs_num:impact_inclination:boxplot-accs}{{12}{12}{Pitch motions obtained with different approaches for the second-order wave forces (IRR-I1 wave, incidence of 60\textdegree {}, without wind effects). The range of frequencies corresponding to the incoming waves is shaded in blue.\relax }{figure.caption.16}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Main results}{12}{subsection.4.4}\protected@file@percent }
 \newlabel{subsec:exp_vs_num:main_results}{{4.4}{12}{Main results}{subsection.4.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}The impact of rotor simplifications adopted in the model tests}{12}{section.5}\protected@file@percent }
-\newlabel{sec:impact_simplifications}{{5}{12}{The impact of rotor simplifications adopted in the model tests}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}A simulation-based evaluation of the impact of rotor simplifications adopted in the model tests}{12}{section.5}\protected@file@percent }
+\newlabel{sec:impact_simplifications}{{5}{12}{A simulation-based evaluation of the impact of rotor simplifications adopted in the model tests}{section.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{12}{section.6}\protected@file@percent }
 \newlabel{sec:conclusion}{{6}{12}{Conclusions}{section.6}{}}
+\bibcite{bayati2018wind}{{4}{2018}{{Bayati et~al.}}{{Bayati, Facchinetti, Fontanella, Giberti and Belloli}}}
 \bibcite{belloli2020hybrid}{{5}{2020}{{Belloli et~al.}}{{Belloli, Bayati, Facchinetti, Fontanella, Giberti, La~Mura, Taruffi and Zasso}}}
 \bibcite{bredmose2017triple}{{6}{2017}{{Bredmose et~al.}}{{Bredmose, Lemmer, Borg, Pegalajar-Jurado, Mikkelsen, Larsen, Fjelstrup, Yu, Lomholt, Boehm et~al.}}}
 \bibcite{burmester2020}{{7}{2020}{{Burmester et~al.}}{{Burmester, Vaz, Gueydon and el~Moctar}}}
